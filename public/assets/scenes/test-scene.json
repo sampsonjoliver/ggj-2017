@@ -1,0 +1,34 @@
+{
+    "id": 1,
+    "images": "../images/something.jpg",
+    "objects": [
+        {
+            "id": 1,
+            "type": "text",
+            "data": "This is some text"
+        },
+        {
+            "id": 2,
+            "type": "linkBlock",
+            "data": [
+                {
+                    "index": 1,
+                    "data": "Option #1. Choose wisely, dirtbag"
+                },
+                {
+                    "index": 2,
+                    "data": "Option #2. I'm less inspred for this one."
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "type": "interactable",
+            "image": "../images/someImage.jpg",
+            "highlight_image": "../images/someImage.jpg",
+            "trigger": {
+                "callback": null
+            }
+        }
+    ]
+}
