@@ -1,6 +1,6 @@
 {
     "id": 1,
-    "images": "../images/something.jpg",
+    "image": "../images/something.jpg",
     "objects": [
         {
             "id": 1,
@@ -13,11 +13,13 @@
             "data": [
                 {
                     "index": 1,
-                    "data": "Option #1. Choose wisely, dirtbag"
+                    "data": "Option #1. Choose wisely, dirtbag",
+                    "link": "scene_id"
                 },
                 {
                     "index": 2,
-                    "data": "Option #2. I'm less inspred for this one."
+                    "data": "Option #2. I'm less inspred for this one.",
+                    "link": "scene_id"
                 }
             ]
         },
