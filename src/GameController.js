@@ -34,10 +34,12 @@ export default class GameController {
 
     GameController.self.images = {};
 
-    var bmd = new Phaser.BitmapData(this, 'overlay', 1920, 1080);
+    var bmd = new Phaser.BitmapData(this, 'overlay', 2200, 1200);
     bmd.fill(0,0,0,1);
     GameController.self.overlay = this.add.image(GameController.self.width/2, GameController.self.height/2, bmd);
     GameController.self.overlay.anchor.set(0.5, 0.5);
+
+    this.camera.bounds = null;
 
     GameController.self.sequence(GameController.self.loadSequence('title'));
   }
@@ -55,8 +57,23 @@ export default class GameController {
     this.sequence(_.concat(enqueue, sequence));
   }
 
+  checkRequires(event) {
+    var requires = event.requires;
+    if(!requires) return true;
+    requires = requires.split(' ').map(require => {
+      if(require.charAt(0) == '!')
+        return !_.includes(this.react.state.links, require.substr(1));
+      else
+        return _.includes(this.react.state.links, require);
+    });
+
+    return _.every(requires, require => require);
+  }
+
   sequence(sequence) {
     var timeout = 0;
+    sequence = _.filter(sequence, this.checkRequires);
+
     for(var i = 0; i < sequence.length; ++i) {
       const event = sequence[i];
       // handle timing

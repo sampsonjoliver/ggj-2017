@@ -1,5 +1,6 @@
 import * as _ from 'lodash';
 import AudioHandler from './AudioHandler';
+import * as Phaser from 'phaser';
 
 const screenWidth = 1920;
 const screenHeight = 1080;
@@ -13,9 +14,11 @@ export function addText(game, event) {
 
 export function addTexts(game, event) {
   var timeout = 0;
-  for(var i = 0; i < event.texts.length; ++i) {
-    const text = event.texts[i];
-    text.top = i == 0 ? event.top * game.height : event.texts[i-1].top + 40;
+  var texts = _.filter(event.texts, text => !_.includes(game.react.state.links, text.target));
+  texts = _.filter(texts, game.checkRequires);
+  for(var i = 0; i < texts.length; ++i) {
+    const text = texts[i];
+    text.top = i == 0 ? event.top * game.height : texts[i-1].top + 40;
     text.left = event.left * game.width;
     setTimeout(() => {
       game.react.addText(text);
@@ -48,6 +51,13 @@ export function addImage(game, event) {
 export function removeAllImages(game, event) {
   _.forOwn(game.images, image => image.destroy());
   game.images = {};
+}
+
+export function cameraPan(game, event) {
+  game.phaser.camera.x = event.x;
+  game.phaser.camera.y = event.y;
+
+  game.phaser.add.tween(game.phaser.camera).to({ x: 0, y: 0}, 2500, Phaser.Easing.Circle).start();
 }
 
 export function removeImage(game, event) {

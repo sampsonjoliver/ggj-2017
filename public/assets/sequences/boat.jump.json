@@ -1,0 +1,50 @@
+[
+  {
+    "type": "addText",
+    "top": 0.2,
+    "left": 0.2,
+    "time": 1,
+    "id": "boat.jump.1",
+    "text": "I just need to move my legs."
+  },
+  {
+    "type": "addText",
+    "top": 0.3,
+    "left": 0.2,
+    "time": 1,
+    "id": "boat.jump.2",
+    "text": "Gravity and broken synapses conspire against me."
+  },
+  {
+    "type": "addText",
+    "top": 0.4,
+    "left": 0.2,
+    "time": 1,
+    "id": "boat.jump.3",
+    "text": "My body is tense."
+  },
+  {
+    "type": "addText",
+    "top": 0.5,
+    "left": 0.2,
+    "time": 1,
+    "id": "boat.jump.4",
+    "text": "My mind is tethered to the sky."
+  },
+  {
+    "type": "addText",
+    "top": 0.6,
+    "left": 0.2,
+    "time": 1,
+    "id": "boat.jump.5",
+    "text": "I just… can’t."
+  },
+  {
+    "type": "addText",
+    "top": 0.7,
+    "left": 0.2,
+    "time": 3,
+    "text": "Continue.",
+    "target": "boat.jump.pt2"
+  }
+]

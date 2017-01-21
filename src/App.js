@@ -13,20 +13,21 @@ import TodoList from './TodoList';
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { texts: [] };
+    this.state = { texts: [], links: [] };
   }
 
   addText(event) {
     var text = _.assign({}, event);
-    this.setState({ texts: _.concat(this.state.texts, text) });
+    this.setState({ texts: _.concat(this.state.texts, text), links: this.state.links });
   }
 
   removeText(event) {
     var texts = _.filter(this.state.texts, item => item.id != event.id);
-    this.setState({ texts: texts});
+    this.setState({ texts: texts, links: this.state.links });
   }
 
   followLink(link) {
+    this.setState({ texts: this.state.texts, links: _.concat(this.state.links, link.target) });
     this.props.game.enqueueSequence(this.props.game.loadSequence(link.target), this.props.game.loadSequence(link.enqueue));
   }
 
