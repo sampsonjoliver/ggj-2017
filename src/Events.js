@@ -1,3 +1,4 @@
+import AudioHandler from './AudioHandler';
 
 export function addText(game, event) {
   game.react.addText(event);
@@ -38,4 +39,37 @@ export function fadeOut(game, event) {
 
 export function fadeIn(game, event) {
   game.phaser.add.tween(game.image).to( { alpha: 1 }, 1000).start();
+}
+
+export function startAudio(game, event) {
+  console.log(AudioHandler.Tracks[event.track]);
+  let track = AudioHandler.getCurrentTracks()[event.track].obj;
+  if (!track) {
+    track = game.phaser.add.audio(event.track);
+  }
+
+  game.phaser.sound.setDecodedCallback(track, function() {
+    AudioHandler.startLoopedTrack(track);
+  });
+}
+
+export function stopAudio(game, event) {
+  var track = AudioHandler.getCurrentTracks()[event.track];
+  if (track.isPlaying) {
+    AudioHandler.stopLoopedTrack(track.obj);
+  }
+}
+
+export function crossfadeAudio(game, event) {
+  var prevTrack = AudioHandler.getCurrentTracks()[event.prevTrack].obj;
+  if (!prevTrack) {
+    prevTrack = game.phaser.add.audio(event.prevTrack);
+  }
+  var nextTrack = AudioHandler.getCurrentTracks()[event.nextTrack].obj;
+  if (!nextTrack) {
+    nextTrack = game.phaser.add.audio(event.nextTrack);
+  }
+
+  AudioHandler.crossfadeLoopedTracks(prevTrack, nextTrack);
+
 }

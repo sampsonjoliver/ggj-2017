@@ -17,6 +17,8 @@ export default class GameController {
     // 'this' is in the context of the new phaser game
     this.load.image('ocean', oceanPath);
     this.load.image('ocean2', ocean2Path);
+
+    AudioHandler.preload(this);
   }
 
   create() {
