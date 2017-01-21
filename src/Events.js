@@ -7,7 +7,7 @@ const screenHeight = 1080;
 export function addText(game, event) {
   event.top *= game.height;
   event.left *= game.width;
-  event.text = event.text.replace('\n', )
+  //event.text = event.text.replace('\n', '<br/>')
   game.react.addText(event);
 }
 

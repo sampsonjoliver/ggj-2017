@@ -45,8 +45,7 @@
   },
   {
     "type": "removeImage",
-    "image": "title_bg",
-    "parallax": true
+    "image": "title_bg"
   },
   {
     "type": "addTexts",

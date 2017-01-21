@@ -28,6 +28,7 @@
     "top": 0.5,
     "left": 0.3,
     "time": 2,
-    "target": "scene1"
+    "target": "scene1",
+    "enqueue": "exit.nofade"
   }
 ]

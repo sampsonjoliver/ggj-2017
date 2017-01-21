@@ -47,12 +47,12 @@ export default class GameController {
   }
 
   loadSequence(name) {
-    return require(`../public/assets/sequences/${name}`);
+    return name ? require(`../public/assets/sequences/${name}.json`) : null;
   }
 
-  enqueueSequence(sequence) {
-    var exit = this.loadSequence('exit');
-    this.sequence(_.concat(exit, sequence));
+  enqueueSequence(sequence, enqueue) {
+    enqueue = enqueue || this.loadSequence('exit');
+    this.sequence(_.concat(enqueue, sequence));
   }
 
   sequence(sequence) {

@@ -5,7 +5,7 @@
   },
   {
     "type": "fadeOut",
-    "time": 0.5
+    "time": 1
   },
   {
     "type": "removeAllImages",

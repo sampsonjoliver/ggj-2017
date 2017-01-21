@@ -27,7 +27,7 @@ class App extends Component {
   }
 
   followLink(link) {
-    this.props.game.enqueueSequence(this.props.game.loadSequence(link.target));
+    this.props.game.enqueueSequence(this.props.game.loadSequence(link.target), this.props.game.loadSequence(link.enqueue));
   }
 
   render() {

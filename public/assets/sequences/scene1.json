@@ -1,27 +1,5 @@
 [
   {
-    "type": "addImage",
-    "image": "title.bg",
-    "parallax": 30,
-    "time": 0
-  },
-  {
-    "type": "addImage",
-    "image": "title.character",
-    "parallax": false,
-    "time": 0
-  },
-  {
-    "type": "addImage",
-    "image": "title.waves",
-    "parallax": -30,
-    "time": 0
-  },
-  {
-    "type": "fadeIn",
-    "time": 1
-  },
-  {
     "type": "addText",
     "top": 0.2,
     "left": 0.2,
@@ -71,21 +49,24 @@
   },
   {
     "type": "addTexts",
-    "top": 0.5,
-    "left": 0.4,
+    "top": 0.7,
+    "left": 0.8,
     "time": 1,
     "texts": [
       {
         "text": "Keep staring at the stars.",
-        "target": "scene1.stare"
+        "target": "scene1.stare",
+        "enqueue": "exit.nofade"
       },
       {
         "text": "Think about jumping.",
-        "target": "scene1.think"
+        "target": "scene1.think",
+        "enqueue": "exit.nofade"
       },
       {
         "text": "Jump.",
-        "target": "scene1.jump"
+        "target": "scene1.jump",
+        "enqueue": "exit.nofade"
       }
     ]
   }
