@@ -1,0 +1,10 @@
+[
+  {
+    "type": "removeAllText",
+    "time": 0
+  },
+  {
+    "type": "fadeOut",
+    "time": 0.5
+  }
+]

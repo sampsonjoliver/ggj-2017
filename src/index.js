@@ -4,10 +4,12 @@ import App from './App';
 import GameController from './GameController';
 import './index.css';
 
-ReactDOM.render(
-  <App />,
+// start up phaser
+var game = new GameController('phaser', 1920, 1080);
+
+var reactApp = ReactDOM.render(
+  <App game={game} />,
   document.getElementById('root')
 );
 
-// start up phaser
-var phaser = new GameController('phaser', 800, 600);
+game.react = reactApp;

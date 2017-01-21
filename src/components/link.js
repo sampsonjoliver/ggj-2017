@@ -2,28 +2,32 @@ import React, {Component} from 'react';
 import styled from 'styled-components';
 
 const StyledText = styled.a`
-  font-size: 1.5em;
-  padding: 0.5em;
-  margin: 0.5em;
-  color: palevioletred;
+  color: #CCCCFF;
+  text-decoration: none;
+
+  &:visited {
+    color: #CCCCFF;
+  }
 
   &:hover {
-    color: papayawhip;
+    color: white;
   }
-`;
 
-const NonBulletLi = styled.li`
-  list-style-type: none;
+  position: absolute;
+  top: ${props => props.top}px;
+  left: ${props => props.left}px;
 `;
 
 export default class Link extends Component {
+  onClick(e) {
+    e.preventDefault();
+    this.props.onClick();
+  }
   render() {
     return (
-      <NonBulletLi className="link" key={this.props.id}>
-        <StyledText href="#" onClick={() => this.props.onClick()}>
-          {this.props.value}
-        </StyledText>
-      </NonBulletLi>
+      <StyledText href="#" onClick={this.onClick.bind(this)} top={this.props.data.top} left={this.props.data.left}>
+        {this.props.children}
+      </StyledText>
     );
   }
 }

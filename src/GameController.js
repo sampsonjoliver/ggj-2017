@@ -1,11 +1,15 @@
 import * as Phaser from 'phaser';
+import * as Events from './Events.js';
+import * as _ from 'lodash';
 
 import oceanPath from '../public/img/background.jpg';
 import ocean2Path from '../public/img/background2.jpg';
 
 export default class GameController {
-  constructor(divId: string, width: number, height: number) {
+  static self;
+  constructor(divId, width, height) {
     this.phaser = new Phaser.Game(width, height, Phaser.AUTO, divId, { preload: this.preload, create: this.create, update: this.update });
+    GameController.self = this;
   }
 
   preload() {
@@ -17,26 +21,41 @@ export default class GameController {
   create() {
     this.stage.backgroundColor = '#000000';
 
-    this.image = this.add.image(0, 0, 'ocean');
+    GameController.self.image = this.add.image(0, 0, 'ocean');
 
-    this.image.inputEnabled = true;
-    this.image.events.onInputDown.add(GameController.transition.bind(this, 'ocean2'));
+    GameController.self.image.alpha = 0;
 
-    this.image.alpha = 0;
-
-    this.add.tween(this.image).to( { alpha: 1 }, 2000).start();
+    GameController.self.sequence(GameController.self.loadSequence('title'));
   }
 
   update() {
     // nothing to do on update...
   }
 
-  static sequence(newBackground) {
-    var fadeOut = this.add.tween(this.image).to( { alpha: 0 }, 1000);
-    fadeOut.onComplete.add(() => this.image.loadTexture(newBackground));
-    var fadeIn = this.add.tween(this.image).delay(500).to( { alpha: 1 }, 2000);
-    fadeOut.chain(fadeIn);
+  loadSequence(name) {
+    return require(`../public/assets/sequences/${name}`);
+  }
 
-    fadeOut.start();
+  enqueueSequence(sequence) {
+    var exit = this.loadSequence('exit');
+    this.sequence(_.concat(exit, sequence));
+  }
+
+  sequence(sequence) {
+    var timeout = 0;
+    for(var i = 0; i < sequence.length; ++i) {
+      const event = sequence[i];
+      // handle timing
+      var time = typeof event.time === 'number' ? event.time : 1;
+      timeout += time;
+      // schedule event to run
+      setTimeout(() => {
+        console.log(event);
+        var eventHandler = Events[event.type];
+        if(eventHandler) {
+          eventHandler(this, event);
+        }
+      }, timeout * 1000);
+    }
   }
 }

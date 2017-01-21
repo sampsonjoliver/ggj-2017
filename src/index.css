@@ -2,4 +2,20 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-color: black;
+}
+
+#container {
+  position: relative;
+}
+
+#phaser {
+  width: 1920px;
+  height: 1080px;
+  margin: auto;
+  text-align:center
+}
+
+#phaser canvas {
+  display: inline;
 }

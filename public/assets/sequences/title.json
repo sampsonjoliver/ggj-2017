@@ -1,0 +1,56 @@
+[
+  {
+    "type": "background",
+    "background": "ocean2"
+  },
+  {
+    "type": "fadeIn",
+    "time": 0
+  },
+  {
+    "type": "addText",
+    "text": "Hmm. How did I find myself here?",
+    "id": "1",
+    "top": 500,
+    "left": 600,
+    "time": 1
+  },
+  {
+    "type": "addLink",
+    "text": "What is this place?",
+    "target": "title",
+    "id": "2",
+    "top": 600,
+    "left": 500,
+    "time": 1
+  },
+  {
+    "type": "removeText",
+    "id": "1",
+    "time": 1
+  },
+  {
+    "type": "addLinks",
+    "time": 1,
+    "top": 300,
+    "left": 200,
+    "links": [
+      {
+        "text": "No, really, what?",
+        "id": "3"
+      },
+      {
+        "text": "This is boring.",
+        "id": "4"
+      },
+      {
+        "text": "Why am I here?",
+        "id": "5"
+      }
+    ]
+  },
+  {
+    "type": "fadeOut",
+    "time": 1
+  }
+]
