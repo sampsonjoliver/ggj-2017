@@ -14,8 +14,8 @@ export function addText(game, event) {
 
 export function addTexts(game, event) {
   var timeout = 0;
-  console.log(game.react.state.links);
   var texts = _.filter(event.texts, text => !_.includes(game.react.state.links, text.target));
+  texts = _.filter(texts, game.checkRequires);
   for(var i = 0; i < texts.length; ++i) {
     const text = texts[i];
     text.top = i == 0 ? event.top * game.height : texts[i-1].top + 40;

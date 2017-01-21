@@ -57,8 +57,23 @@ export default class GameController {
     this.sequence(_.concat(enqueue, sequence));
   }
 
+  checkRequires(event) {
+    var requires = event.requires;
+    if(!requires) return true;
+    requires = requires.split(' ').map(require => {
+      if(require.charAt(0) == '!')
+        return !_.includes(this.react.state.links, require.substr(1));
+      else
+        return _.includes(this.react.state.links, require);
+    });
+
+    return _.every(requires, require => require);
+  }
+
   sequence(sequence) {
     var timeout = 0;
+    sequence = _.filter(sequence, this.checkRequires);
+
     for(var i = 0; i < sequence.length; ++i) {
       const event = sequence[i];
       // handle timing
