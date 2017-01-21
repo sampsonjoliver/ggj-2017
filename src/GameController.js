@@ -41,7 +41,7 @@ export default class GameController {
 
     this.camera.bounds = null;
 
-    GameController.self.sequence(GameController.self.loadSequence('title'));
+    GameController.self.sequence(GameController.self.loadSequence('regret'));
   }
 
   update() {
@@ -60,6 +60,7 @@ export default class GameController {
   checkRequires(event) {
     var requires = event.requires;
     if(!requires) return true;
+    console.log(this);
     requires = requires.split(' ').map(require => {
       if(require.charAt(0) == '!')
         return !_.includes(this.react.state.links, require.substr(1));
@@ -72,7 +73,7 @@ export default class GameController {
 
   sequence(sequence) {
     var timeout = 0;
-    sequence = _.filter(sequence, this.checkRequires);
+    sequence = _.filter(sequence, this.checkRequires.bind(this));
 
     for(var i = 0; i < sequence.length; ++i) {
       const event = sequence[i];
