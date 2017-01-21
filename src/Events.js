@@ -14,9 +14,11 @@ export function addText(game, event) {
 
 export function addTexts(game, event) {
   var timeout = 0;
-  for(var i = 0; i < event.texts.length; ++i) {
-    const text = event.texts[i];
-    text.top = i == 0 ? event.top * game.height : event.texts[i-1].top + 40;
+  console.log(game.react.state.links);
+  var texts = _.filter(event.texts, text => !_.includes(game.react.state.links, text.target));
+  for(var i = 0; i < texts.length; ++i) {
+    const text = texts[i];
+    text.top = i == 0 ? event.top * game.height : texts[i-1].top + 40;
     text.left = event.left * game.width;
     setTimeout(() => {
       game.react.addText(text);
