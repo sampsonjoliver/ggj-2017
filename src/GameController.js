@@ -7,6 +7,15 @@ import titleBgPath from '../public/assets/images/scene1_pass1_bg.png';
 import titleCharPath from '../public/assets/images/scene1_pass1_character.png';
 import titleWavesPath from '../public/assets/images/scene1_pass1_waves.png';
 
+import wtfBgPath from '../public/assets/images/scene2_pass1_bg.png';
+import wtfBg2Path from '../public/assets/images/scene2_pass1_bg2.png';
+import wtfCharPath from '../public/assets/images/scene2_pass1_characters.png';
+import wtfDebrisPath from '../public/assets/images/scene2_pass1_debris.png';
+
+import regretCharPath from '../public/assets/images/scene3_pass1_characters.png';
+import regretBgPath from '../public/assets/images/scene3_pass1_bg.png';
+import regretBg2Path from '../public/assets/images/scene3_pass1_bg2.png';
+
 import ocean2Path from '../public/img/background2.jpg';
 
 export default class GameController {
@@ -23,6 +32,15 @@ export default class GameController {
     this.load.image('title.bg', titleBgPath);
     this.load.image('title.character', titleCharPath);
     this.load.image('title.waves', titleWavesPath);
+
+    this.load.image('wtf.character', wtfCharPath);
+    this.load.image('wtf.bg', wtfBgPath);
+    this.load.image('wtf.bg2', wtfBg2Path);
+    this.load.image('wtf.debris', wtfDebrisPath);
+
+    this.load.image('regret.character', regretCharPath);
+    this.load.image('regret.bg', regretBgPath);
+    this.load.image('regret.bg2', regretBg2Path);
 
     AudioHandler.preload(this);
   }

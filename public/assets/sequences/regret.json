@@ -1,13 +1,31 @@
 [
   {
     "type": "addImage",
-    "image": "fish.bg",
+    "image": "regret.bg",
+    "parallax": -30,
+    "time": 0
+  },
+  {
+    "type": "addImage",
+    "image": "regret.bg2",
+    "parallax": 10,
+    "time": 0
+  },
+  {
+    "type": "addImage",
+    "image": "regret.character",
     "parallax": false,
     "time": 0
   },
   {
+    "type": "cameraPan",
+    "time": 1,
+    "x": -60,
+    "y": -30
+  },
+  {
     "type": "fadeIn",
-    "time": 1
+    "time": 0
   },
   {
     "type": "addText",
