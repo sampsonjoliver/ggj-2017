@@ -1,0 +1,67 @@
+[
+  {
+    "type": "addText",
+    "top": 0.2,
+    "left": 0.3,
+    "time": 1,
+      "text": "I am truly sorry.",
+      "id": "regret.kind.1"
+  },
+  {
+    "type": "addText",
+    "top": 0.3,
+    "left": 0.3,
+    "time": 1,
+    "text": "You deserve not this violence against you. You are a mirror across time; I ought not to shatter you.",
+    "id": "regret.kind.2"
+  },
+  {
+    "type": "addText",
+    "top": 0.4,
+    "left": 0.3,
+    "time": 1,
+    "text": "Would...",
+    "id": "regret.kind.3"
+  },
+  {
+    "type": "addText",
+    "top": 0.5,
+    "left": 0.3,
+    "time": 0.5,
+    "text": "Would you help me?",
+    "id": "regret.kind.4"
+  },
+  {
+    "type": "addText",
+    "top": 0.6,
+    "left": 0.3,
+    "time": 0.5,
+    "text": "Take me with you. Take me away from here.",
+    "id": "regret.kind.5"
+  },
+  {
+    "type": "addText",
+    "top": 0.7,
+    "left": 0.3,
+    "time": 1,
+    "text": "Like they would not. No mercy, no empathy.",
+    "id": "regret.kind.6"
+  },
+  {
+    "type": "addText",
+    "top": 0.8,
+    "left": 0.3,
+    "time": 1.5,
+    "text": "If only I could start again...",
+    "id": "regret.kind.7"
+  },
+  {
+    "type": "addText",
+    "top": 0.9,
+    "left": 0.5,
+    "time": 1,
+    "text": "Continue.",
+    "target": "regret.dream",
+    "enqueue": "exit.nofade"
+  }
+]

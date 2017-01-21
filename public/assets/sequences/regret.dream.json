@@ -1,0 +1,110 @@
+[
+  {
+    "type": "addText",
+    "top": 0.2,
+    "left": 0.5,
+    "time": 1,
+    "text": "I have dreamt and dreamt well of a better path. One so ostensibly near, but perpetually drawing away from reach.",
+    "id": "regret.dream.1",
+    "requires": "!regret.unkind"
+  },
+  {
+    "type": "addText",
+    "top": 0.3,
+    "left": 0.5,
+    "time": 1,
+    "id": "regret.dream.2",
+    "text": "Dreams have drifted and tossed as a blurry vessel on the undulating expanse of the sky above.",
+    "requires": "!regret.unkind"
+  },
+  {
+    "type": "addText",
+    "top": 0.4,
+    "left": 0.5,
+    "time": 1,
+    "id": "regret.dream.3",
+    "text": "Peering from dark corners like neighbours from timelines unknown.",
+    "requires": "!regret.unkind"
+  },
+  {
+    "type": "addText",
+    "top": 0.5,
+    "left": 0.5,
+    "time": 1,
+    "id": "regret.dream.4",
+    "text": "My pathetic story at the centre of a great inverse panopticon. United in despair for me.",
+    "requires": "!regret.unkind"
+  },
+  {
+    "type": "addText",
+    "top": 0.6,
+    "left": 0.3,
+    "time": 1,
+    "id": "regret.dream.observe.1",
+    "text": "I have sunk. And now will bleed slowly to death, without a particle of ohpe to speak of.",
+    "requires": "!regret.unkind regret.observe"
+  },
+  {
+    "type": "addText",
+    "top": 0.7,
+    "left": 0.3,
+    "time": 1,
+    "id": "regret.dream.observe.2",
+    "text": "...",
+    "requires": "!regret.unkind regret.observe"
+  },
+  {
+    "type": "addText",
+    "top": 0.8,
+    "left": 0.3,
+    "time": 1,
+    "id": "regret.dream.observe.3",
+    "text": "Say something!",
+    "requires": "!regret.unkind regret.observe"
+  },
+  {
+    "type": "addText",
+    "top": 0.6,
+    "left": 0.6,
+    "time": 1,
+    "id": "regret.dream.kind.1",
+    "text": "I regret offending you, as I regret my life.",
+    "requires": "!regret.unkind regret.kind"
+  },
+  {
+    "type": "addText",
+    "top": 0.7,
+    "left": 0.6,
+    "time": 1,
+    "id": "regret.dream.kind.2",
+    "text": "Please, cut my throat deep and true.",
+    "requires": "!regret.unkind regret.kind"
+  },
+  {
+    "type": "addText",
+    "top": 0.8,
+    "left": 0.6,
+    "time": 1,
+    "id": "regret.dream.kind.3",
+    "text": "Make it brief and meaningless.",
+    "requires": "!regret.unkind regret.kind"
+  },
+  {
+    "type": "addTexts",
+    "top": 0.5,
+    "left": 0.8,
+    "time": 1,
+    "texts": [
+      {
+        "text": "Kill.",
+        "target": "regret.kill",
+        "enqueue": "exit.nofade"
+      },
+      {
+        "text": "Leave to die.",
+        "target": "regret.leave",
+        "enqueue": "exit.nofade"
+      }
+    ]
+  }
+]

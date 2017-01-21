@@ -1,0 +1,11 @@
+[
+  {
+    "type": "addText",
+    "top": 0.6,
+    "left": 0.5,
+    "time": 1,
+    "id": "regret.leave.1",
+    "text": "Leave.",
+    "target": "scene5"
+  }
+]

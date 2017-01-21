@@ -14,20 +14,20 @@
     "top": 0.2,
     "left": 0.2,
     "time": 1,
-    "id": "scene2.1",
+    "id": "wtf.1",
     "text": "Sinking..."
   },
   {
     "type": "removeText",
     "time": 2,
-    "id": "scene2.1"
+    "id": "wtf.1"
   },
   {
     "type": "addText",
     "top": 0.3,
     "left": 0.3,
     "time": 0,
-    "id": "scene2.2",
+    "id": "wtf.2",
     "text": "A foreign swarm drifts from the blur..."
   },
   {
@@ -38,17 +38,17 @@
     "texts": [
       {
         "text": "Observe.",
-        "target": "scene2.observe",
+        "target": "wtf.observe",
         "enqueue": "exit.nofade"
       },
       {
         "text": "Be kind.",
-        "target": "scene2.kind",
+        "target": "wtf.kind",
         "enqueue": "exit.nofade"
       },
       {
         "text": "Be unkind.",
-        "target": "scene2.unkind",
+        "target": "wtf.unkind",
         "enqueue": "exit.nofade"
       }
     ]

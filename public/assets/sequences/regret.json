@@ -1,0 +1,83 @@
+[
+  {
+    "type": "addImage",
+    "image": "fish.bg",
+    "parallax": false,
+    "time": 0
+  },
+  {
+    "type": "fadeIn",
+    "time": 1
+  },
+  {
+    "type": "addText",
+    "top": 0.2,
+    "left": 0.5,
+    "time": 1,
+    "id": "regret.1",
+    "text": "You!"
+  },
+  {
+    "type": "addText",
+    "top": 0.3,
+    "left": 0.4,
+    "time": 1,
+    "id": "regret.2",
+    "text": "I see you lurking, you vile obscenity."
+  },
+  {
+    "type": "addText",
+    "top": 0.4,
+    "left": 0.6,
+    "time": 1,
+    "id": "regret.3",
+    "text": "You diabolical growth!"
+  },
+  {
+    "type": "addText",
+    "top": 0.5,
+    "left": 0.3,
+    "time": 1,
+    "id": "regret.4",
+    "text": "Sentient crust-borne mould!"
+  },
+  {
+    "type": "addText",
+    "top": 0.6,
+    "left": 0.6,
+    "time": 3,
+    "id": "regret.5",
+    "text": "How could you just watch me die like this?"
+  },
+  {
+    "type": "addText",
+    "top": 0.7,
+    "left": 0.5,
+    "time": 1,
+    "id": "regret.6",
+    "text": "Malignant filth!"
+  },
+  {
+    "type": "addTexts",
+    "top": 0.7,
+    "left": 0.6,
+    "time": 1,
+    "texts": [
+      {
+        "text": "Watch on in silence.",
+        "target": "regret.observe",
+        "enqueue": "exit.nofade"
+      },
+      {
+        "text": "Be kind.",
+        "target": "regret.kind",
+        "enqueue": "exit.nofade"
+      },
+      {
+        "text": "Be unkind.",
+        "target": "regret.unkind",
+        "enqueue": "exit.nofade"
+      }
+    ]
+  }
+]

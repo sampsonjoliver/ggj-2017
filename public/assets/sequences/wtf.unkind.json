@@ -4,7 +4,7 @@
     "top": 0.2,
     "left": 0.2,
     "time": 1,
-    "id": "scene2.unkind.1",
+    "id": "wtf.unkind.1",
     "text": "A fear twists you into fits of insatiable hunger."
   },
   {
@@ -12,7 +12,7 @@
     "top": 0.3,
     "left": 0.3,
     "time": 1,
-    "id": "scene2.unkind.2",
+    "id": "wtf.unkind.2",
     "text": "You tear into the school and tear flesh from soft bones"
   },
   {
@@ -20,7 +20,7 @@
     "top": 0.4,
     "left": 0.2,
     "time": 1,
-    "id": "scene2.unkind.3",
+    "id": "wtf.unkind.3",
     "text": "Hunger subsides."
   },
   {
@@ -28,7 +28,7 @@
     "top": 0.5,
     "left": 0.4,
     "time": 1,
-    "id": "scene2.unkind.4",
+    "id": "wtf.unkind.4",
     "text": "The survivors scatter in terror."
   },
   {
@@ -36,8 +36,8 @@
     "top": 0.6,
     "left": 0.5,
     "time": 1,
-    "id": "scene2.unkind.5",
+    "id": "wtf.unkind.5",
     "text": "You sink deeper.",
-    "target": "scene3"
+    "target": "scene4"
   }
 ]
