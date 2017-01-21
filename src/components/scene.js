@@ -22,9 +22,9 @@ export default class Scene extends Component {
       {this.state.objects.map((obj) => {
         let object = null;
         if (obj.type == linkType)
-          object = <LinkGroup key={obj.id} links={obj.data} />
-        else if (obj.type = textType)
-          object = <Text key={obj.id} value={obj.data} />
+          object = <LinkGroup key={obj.id} data={obj} />
+        else if (obj.type == textType)
+          object = <Text key={obj.id} data={obj} />
 
         return object;
       })}
