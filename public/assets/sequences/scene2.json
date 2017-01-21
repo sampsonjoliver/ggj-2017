@@ -1,0 +1,56 @@
+[
+  {
+    "type": "addImage",
+    "image": "fish.bg",
+    "parallax": false,
+    "time": 0
+  },
+  {
+    "type": "fadeIn",
+    "time": 1
+  },
+  {
+    "type": "addText",
+    "top": 0.2,
+    "left": 0.2,
+    "time": 1,
+    "id": "scene2.1",
+    "text": "Sinking..."
+  },
+  {
+    "type": "removeText",
+    "time": 2,
+    "id": "scene2.1"
+  },
+  {
+    "type": "addText",
+    "top": 0.3,
+    "left": 0.3,
+    "time": 0,
+    "id": "scene2.2",
+    "text": "A foreign swarm drifts from the blur..."
+  },
+  {
+    "type": "addTexts",
+    "top": 0.5,
+    "left": 0.4,
+    "time": 1,
+    "texts": [
+      {
+        "text": "Observe.",
+        "target": "scene2.observe",
+        "enqueue": "exit.nofade"
+      },
+      {
+        "text": "Be kind.",
+        "target": "scene2.kind",
+        "enqueue": "exit.nofade"
+      },
+      {
+        "text": "Be unkind.",
+        "target": "scene2.unkind",
+        "enqueue": "exit.nofade"
+      }
+    ]
+  }
+]

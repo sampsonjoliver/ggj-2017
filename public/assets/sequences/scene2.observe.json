@@ -1,0 +1,35 @@
+[
+  {
+    "type": "addText",
+    "top": 0.2,
+    "left": 0.2,
+    "time": 1,
+    "id": "scene2.observe.1",
+    "text": "... They dance in the dappled light."
+  },
+  {
+    "type": "addText",
+    "top": 0.3,
+    "left": 0.3,
+    "time": 1,
+    "id": "scene2.observe.2",
+    "text": "You have no place among them."
+  },
+  {
+    "type": "addText",
+    "top": 0.4,
+    "left": 0.4,
+    "time": 1,
+    "id": "scene2.observe.3",
+    "text": "You behold their effortless beauty and slink further into the darkness."
+  },
+  {
+    "type": "addText",
+    "top": 0.6,
+    "left": 0.5,
+    "time": 1,
+    "id": "scene2.observe.4",
+    "text": "You sink deeper.",
+    "target": "scene3"
+  }
+]

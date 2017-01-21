@@ -1,0 +1,43 @@
+[
+  {
+    "type": "addText",
+    "top": 0.2,
+    "left": 0.2,
+    "time": 1,
+    "id": "scene2.kind.1",
+    "text": "Hello, unfamiliar one."
+  },
+  {
+    "type": "addText",
+    "top": 0.3,
+    "left": 0.3,
+    "time": 1,
+    "id": "scene2.kind.2",
+    "text": "Why don't you float with us a while?"
+  },
+  {
+    "type": "addText",
+    "top": 0.4,
+    "left": 0.4,
+    "time": 1,
+    "id": "scene2.kind.3",
+    "text": "We're not so different, you know."
+  },
+  {
+    "type": "addText",
+    "top": 0.6,
+    "left": 0.5,
+    "time": 1,
+    "id": "scene2.observe.4",
+    "text": "You float for a spell; your frayed nerves calm ever so slightly."
+  },
+  {
+    "type": "addText",
+    "top": 0.7,
+    "left": 0.5,
+    "time": 2,
+    "id": "scene2.observe.5",
+    "text": "... And sink deeper.",
+    "target": "scene3"
+  }
+]
