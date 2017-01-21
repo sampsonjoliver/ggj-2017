@@ -34,10 +34,12 @@ export default class GameController {
 
     GameController.self.images = {};
 
-    var bmd = new Phaser.BitmapData(this, 'overlay', 1920, 1080);
+    var bmd = new Phaser.BitmapData(this, 'overlay', 2200, 1200);
     bmd.fill(0,0,0,1);
     GameController.self.overlay = this.add.image(GameController.self.width/2, GameController.self.height/2, bmd);
     GameController.self.overlay.anchor.set(0.5, 0.5);
+
+    this.camera.bounds = null;
 
     GameController.self.sequence(GameController.self.loadSequence('title'));
   }

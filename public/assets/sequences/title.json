@@ -18,8 +18,14 @@
     "time": 0
   },
   {
+    "type": "cameraPan",
+    "time": 1,
+    "x": -60,
+    "y": -30
+  },
+  {
     "type": "fadeIn",
-    "time": 1
+    "time": 0
   },
   {
     "type": "addText",
@@ -28,7 +34,7 @@
     "top": 0.5,
     "left": 0.3,
     "time": 2,
-    "target": "scene1",
+    "target": "boat",
     "enqueue": "exit.nofade"
   }
 ]

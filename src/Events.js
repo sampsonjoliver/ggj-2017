@@ -1,5 +1,6 @@
 import * as _ from 'lodash';
 import AudioHandler from './AudioHandler';
+import * as Phaser from 'phaser';
 
 const screenWidth = 1920;
 const screenHeight = 1080;
@@ -48,6 +49,13 @@ export function addImage(game, event) {
 export function removeAllImages(game, event) {
   _.forOwn(game.images, image => image.destroy());
   game.images = {};
+}
+
+export function cameraPan(game, event) {
+  game.phaser.camera.x = event.x;
+  game.phaser.camera.y = event.y;
+
+  game.phaser.add.tween(game.phaser.camera).to({ x: 0, y: 0}, 2500, Phaser.Easing.Circle).start();
 }
 
 export function removeImage(game, event) {
