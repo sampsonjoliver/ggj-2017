@@ -41,7 +41,7 @@
     "left": 0.3,
     "time": 1,
     "id": "regret.dream.observe.1",
-    "text": "I have sunk. And now will bleed slowly to death, without a particle of ohpe to speak of.",
+    "text": "I have sunk. And now will bleed slowly to death, without a particle of hope to speak of.",
     "requires": "!regret.unkind regret.observe"
   },
   {

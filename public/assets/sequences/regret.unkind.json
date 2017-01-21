@@ -29,7 +29,7 @@
     "left": 0.5,
     "time": 2,
     "text": "Continue.",
-    "target": "regret.kill",
+    "target": "regret.dream",
     "enqueue": "exit.nofade"
   }
 ]
