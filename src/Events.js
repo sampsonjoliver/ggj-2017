@@ -48,9 +48,7 @@ export function startAudio(game, event) {
     track = game.phaser.add.audio(event.track);
   }
 
-  game.phaser.sound.setDecodedCallback(track, function() {
-    AudioHandler.startLoopedTrack(track);
-  });
+  AudioHandler.startLoopedTrack(track);
 }
 
 export function stopAudio(game, event) {

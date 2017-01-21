@@ -1,6 +1,4 @@
 import Sound from 'phaser';
-import background1 from '../public/audio/background1.mp3';
-import background2 from '../public/audio/background2.mp3';
 
 const currentTracks = {};
 
@@ -30,6 +28,8 @@ export default class AudioHandler {
   }
 
   static startLoopedTrack(track) {
+    console.log(track);
+
     currentTracks[track.name] = {
       obj: track,
       isPlaying: true
@@ -43,7 +43,7 @@ export default class AudioHandler {
       isPlaying: false
     };
     console.log(track);
-    track.stop();
+    track.fadeOut();
   }
 
   static crossfadeLoopedTracks(fromTrack, toTrack) {
