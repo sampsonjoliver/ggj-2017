@@ -1,6 +1,7 @@
 import * as Phaser from 'phaser';
 import * as Events from './Events.js';
 import * as _ from 'lodash';
+import AudioHandler from './AudioHandler';
 
 import oceanPath from '../public/img/background.jpg';
 import ocean2Path from '../public/img/background2.jpg';
@@ -19,6 +20,8 @@ export default class GameController {
   }
 
   create() {
+    this.stage.disableVisibilityChange = true;
+
     this.stage.backgroundColor = '#000000';
 
     GameController.self.image = this.add.image(0, 0, 'ocean');
