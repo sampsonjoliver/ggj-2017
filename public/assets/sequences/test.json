@@ -1,0 +1,71 @@
+[
+  {
+    "type": "addImage",
+    "image": "title.bg",
+    "parallax": 30,
+    "time": 0
+  },
+  {
+    "type": "addImage",
+    "image": "title.character",
+    "parallax": false,
+    "time": 0
+  },
+  {
+    "type": "addImage",
+    "image": "title.waves",
+    "parallax": -30,
+    "time": 0
+  },
+  {
+    "type": "fadeIn",
+    "time": 1
+  },
+  {
+    "type": "addText",
+    "text": "Hmm. How did I find myself here?",
+    "id": "1",
+    "top": 0.50,
+    "left": 0.5,
+    "time": 1
+  },
+  {
+    "type": "addText",
+    "text": "What is this place?",
+    "target": "title",
+    "id": "2",
+    "top": 0.55,
+    "left": 0.45,
+    "time": 1
+  },
+  {
+    "type": "removeText",
+    "id": "1",
+    "time": 1
+  },
+  {
+    "type": "removeImage",
+    "image": "title_bg",
+    "parallax": true
+  },
+  {
+    "type": "addTexts",
+    "time": 1,
+    "top": 0.2,
+    "left": 0.15,
+    "texts": [
+      {
+        "text": "No, really, what?",
+        "id": "3"
+      },
+      {
+        "text": "This is boring.",
+        "id": "4"
+      },
+      {
+        "text": "Why am I here?",
+        "id": "5"
+      }
+    ]
+  }
+]

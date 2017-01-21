@@ -5,7 +5,6 @@ import _ from 'lodash';
 import './App.css';
 
 import Text from './components/text'
-import Link from './components/link'
 
 import GameController from './GameController'
 
@@ -14,24 +13,17 @@ import TodoList from './TodoList';
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = { items: [] };
+    this.state = { texts: [] };
   }
 
   addText(event) {
     var text = _.assign({}, event);
-    text.type = 'text';
-    this.setState({ items: _.concat(this.state.items, text) });
+    this.setState({ texts: _.concat(this.state.texts, text) });
   }
 
   removeText(event) {
-    var items = _.filter(this.state.items, item => item.id != event.id);
-    this.setState({ items: items});
-  }
-
-  addLink(event) {
-    var link = _.assign({}, event);
-    link.type = 'link';
-    this.setState({ items: _.concat(this.state.items, link) });
+    var texts = _.filter(this.state.texts, item => item.id != event.id);
+    this.setState({ texts: texts});
   }
 
   followLink(link) {
@@ -45,13 +37,7 @@ class App extends Component {
           transitionName="fade"
           transitionEnterTimeout={1000}
           transitionLeaveTimeout={1000}>
-          {this.state.items.map((item, i) => {
-            if(item.type == 'text') {
-              return <Text key={item.id} data={{ top: item.top, left: item.left}}>{item.text}</Text>
-            } else {
-              return <Link key={item.id} data={{ top: item.top, left: item.left}} onClick={() => this.followLink(item)}>{item.text}</Link>
-            }
-          })}
+          {this.state.texts.map((item, i) => <Text key={item.id || item.target} top={item.top} left={item.left} target={item.target} onClick={this.followLink.bind(this, item)}>{item.text}</Text>)}
         </ReactCSSTransitionGroup>
       </div>
     );

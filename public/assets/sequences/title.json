@@ -1,56 +1,33 @@
 [
   {
-    "type": "background",
-    "background": "ocean2"
-  },
-  {
-    "type": "fadeIn",
+    "type": "addImage",
+    "image": "title.bg",
+    "parallax": 30,
     "time": 0
   },
   {
+    "type": "addImage",
+    "image": "title.character",
+    "parallax": false,
+    "time": 0
+  },
+  {
+    "type": "addImage",
+    "image": "title.waves",
+    "parallax": -30,
+    "time": 0
+  },
+  {
+    "type": "fadeIn",
+    "time": 1
+  },
+  {
     "type": "addText",
-    "text": "Hmm. How did I find myself here?",
+    "text": "Here I am",
     "id": "1",
-    "top": 500,
-    "left": 600,
-    "time": 1
-  },
-  {
-    "type": "addLink",
-    "text": "What is this place?",
-    "target": "title",
-    "id": "2",
-    "top": 600,
-    "left": 500,
-    "time": 1
-  },
-  {
-    "type": "removeText",
-    "id": "1",
-    "time": 1
-  },
-  {
-    "type": "addLinks",
-    "time": 1,
-    "top": 300,
-    "left": 200,
-    "links": [
-      {
-        "text": "No, really, what?",
-        "id": "3"
-      },
-      {
-        "text": "This is boring.",
-        "id": "4"
-      },
-      {
-        "text": "Why am I here?",
-        "id": "5"
-      }
-    ]
-  },
-  {
-    "type": "fadeOut",
-    "time": 1
+    "top": 0.5,
+    "left": 0.3,
+    "time": 2,
+    "target": "scene1"
   }
 ]

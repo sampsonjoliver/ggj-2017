@@ -3,20 +3,26 @@ import * as Events from './Events.js';
 import * as _ from 'lodash';
 import AudioHandler from './AudioHandler';
 
-import oceanPath from '../public/img/background.jpg';
+import titleBgPath from '../public/assets/images/scene1_pass1_bg.png';
+import titleCharPath from '../public/assets/images/scene1_pass1_character.png';
+import titleWavesPath from '../public/assets/images/scene1_pass1_waves.png';
+
 import ocean2Path from '../public/img/background2.jpg';
 
 export default class GameController {
   static self;
   constructor(divId, width, height) {
     this.phaser = new Phaser.Game(width, height, Phaser.AUTO, divId, { preload: this.preload, create: this.create, update: this.update });
+    this.width = width;
+    this.height = height;
     GameController.self = this;
   }
 
   preload() {
     // 'this' is in the context of the new phaser game
-    this.load.image('ocean', oceanPath);
-    this.load.image('ocean2', ocean2Path);
+    this.load.image('title.bg', titleBgPath);
+    this.load.image('title.character', titleCharPath);
+    this.load.image('title.waves', titleWavesPath);
   }
 
   create() {
@@ -24,9 +30,12 @@ export default class GameController {
 
     this.stage.backgroundColor = '#000000';
 
-    GameController.self.image = this.add.image(0, 0, 'ocean');
+    GameController.self.images = {};
 
-    GameController.self.image.alpha = 0;
+    var bmd = new Phaser.BitmapData(this, 'overlay', 1920, 1080);
+    bmd.fill(0,0,0,1);
+    GameController.self.overlay = this.add.image(GameController.self.width/2, GameController.self.height/2, bmd);
+    GameController.self.overlay.anchor.set(0.5, 0.5);
 
     GameController.self.sequence(GameController.self.loadSequence('title'));
   }
@@ -56,7 +65,7 @@ export default class GameController {
         console.log(event);
         var eventHandler = Events[event.type];
         if(eventHandler) {
-          eventHandler(this, event);
+          eventHandler(this, _.cloneDeep(event));
         }
       }, timeout * 1000);
     }

@@ -1,0 +1,92 @@
+[
+  {
+    "type": "addImage",
+    "image": "title.bg",
+    "parallax": 30,
+    "time": 0
+  },
+  {
+    "type": "addImage",
+    "image": "title.character",
+    "parallax": false,
+    "time": 0
+  },
+  {
+    "type": "addImage",
+    "image": "title.waves",
+    "parallax": -30,
+    "time": 0
+  },
+  {
+    "type": "fadeIn",
+    "time": 1
+  },
+  {
+    "type": "addText",
+    "top": 0.2,
+    "left": 0.2,
+    "time": 1,
+    "id": "scene1.1",
+    "text": "Under a sea of cosmic pinholes,\nTracing shapes through the ink;"
+  },
+  {
+    "type": "addText",
+    "top": 0.3,
+    "left": 0.2,
+    "time": 1,
+    "id": "scene1.2",
+    "text": "Meaning onto the meaningless.\nThe jagged glass of the ocean reflecting space and the infinite quiet."
+  },
+  {
+    "type": "addText",
+    "top": 0.4,
+    "left": 0.2,
+    "time": 1,
+    "id": "scene1.3",
+    "text": "Every slight movement in my body sways the boat; scattering minute aberrations out from the hull.\nMeaningless waveforms, signalling nothing to nothing and nobody."
+  },
+  {
+    "type": "addText",
+    "top": 0.5,
+    "left": 0.2,
+    "time": 1,
+    "id": "scene1.4",
+    "text": "Some part of me is drawn downwards, out of this vessel - away from the deep nothingness above me. Into the infinity below, where I might find some long-sunk piece of myself."
+  },
+  {
+    "type": "addText",
+    "top": 0.6,
+    "left": 0.2,
+    "time": 1,
+    "id": "scene1.5",
+    "text": "Waterlogged and pale."
+  },
+  {
+    "type": "addText",
+    "top": 0.7,
+    "left": 0.2,
+    "time": 1,
+    "id": "scene1.6",
+    "text": "But I just cannot follow it."
+  },
+  {
+    "type": "addTexts",
+    "top": 0.5,
+    "left": 0.4,
+    "time": 1,
+    "texts": [
+      {
+        "text": "Keep staring at the stars.",
+        "target": "scene1.stare"
+      },
+      {
+        "text": "Think about jumping.",
+        "target": "scene1.think"
+      },
+      {
+        "text": "Jump.",
+        "target": "scene1.jump"
+      }
+    ]
+  }
+]

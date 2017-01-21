@@ -6,5 +6,9 @@
   {
     "type": "fadeOut",
     "time": 0.5
+  },
+  {
+    "type": "removeAllImages",
+    "time": 1
   }
 ]
