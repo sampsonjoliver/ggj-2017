@@ -23,6 +23,8 @@ export default class GameController {
     this.load.image('title.bg', titleBgPath);
     this.load.image('title.character', titleCharPath);
     this.load.image('title.waves', titleWavesPath);
+
+    AudioHandler.preload(this);
   }
 
   create() {
