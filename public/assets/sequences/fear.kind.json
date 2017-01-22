@@ -1,0 +1,44 @@
+[
+  {
+    "type": "addText",
+    "top": 0.2,
+    "left": 0.5,
+    "time": 1,
+    "id": "fear.kind.1",
+    "text": "We could help each other, you know."
+  },
+  {
+    "type": "addText",
+    "top": 0.3,
+    "left": 0.4,
+    "time": 1,
+    "id": "fear.kind.2",
+    "text": "Please... come closer so that I may gently eviscerate you."
+  },
+  {
+    "type": "addText",
+    "top": 0.4,
+    "left": 0.6,
+    "time": 1,
+    "id": "fear.kind.3",
+    "text": "We can rust away together."
+  },
+  {
+    "type": "addText",
+    "top": 0.5,
+    "left": 0.3,
+    "time": 1,
+    "id": "fear.kind.4",
+    "text": "Show me the love that has been stripped from terrors of the deep."
+  },
+  {
+    "type": "addText",
+    "top": 0.6,
+    "left": 0.6,
+    "time": 1,
+    "id": "fear.kind.5",
+    "text": "Continue.",
+    "target": "fear.rant",
+    "enqueue": "exit.nofade"
+  }
+]

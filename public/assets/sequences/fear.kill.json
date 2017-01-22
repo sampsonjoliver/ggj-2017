@@ -4,15 +4,16 @@
     "top": 0.2,
     "left": 0.5,
     "time": 1,
-    "id": "regret.kill.1",
-    "text": "No..."
+    "id": "fear.kill.1",
+    "text": "Don't leave me.",
+    "require": "fear.leave"
   },
   {
     "type": "addText",
     "top": 0.6,
     "left": 0.5,
-    "time": 1,
-    "id": "regret.kill.2",
+    "time": 2,
+    "id": "fear.kill.2",
     "text": "Leave.",
     "target": "scene5"
   }

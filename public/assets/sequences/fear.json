@@ -1,0 +1,75 @@
+[
+  {
+    "type": "addImage",
+    "image": "todo",
+    "parallax": -30,
+    "time": 0
+  },
+  {
+    "type": "fadeIn",
+    "time": 0
+  },
+  {
+    "type": "addText",
+    "top": 0.2,
+    "left": 0.5,
+    "time": 1,
+    "id": "fear.1",
+    "text": "Who's there!?"
+  },
+  {
+    "type": "addText",
+    "top": 0.3,
+    "left": 0.4,
+    "time": 1,
+    "id": "fear.2",
+    "text": "Please, have mercy on my twisted body!"
+  },
+  {
+    "type": "addText",
+    "top": 0.4,
+    "left": 0.6,
+    "time": 1,
+    "id": "fear.3",
+    "text": "I feel both our final acts edge truly close."
+  },
+  {
+    "type": "addText",
+    "top": 0.5,
+    "left": 0.3,
+    "time": 1,
+    "id": "fear.4",
+    "text": "Our lives have drawn their distant paths across time and coalesced at this point, where we might spill through each other."
+  },
+  {
+    "type": "addText",
+    "top": 0.6,
+    "left": 0.6,
+    "time": 3,
+    "id": "fear.5",
+    "text": "A pact of cold blood."
+  },
+  {
+    "type": "addTexts",
+    "top": 0.7,
+    "left": 0.6,
+    "time": 1,
+    "texts": [
+      {
+        "text": "Listen.",
+        "target": "fear.listen",
+        "enqueue": "exit.nofade"
+      },
+      {
+        "text": "Be kind.",
+        "target": "fear.kind",
+        "enqueue": "exit.nofade"
+      },
+      {
+        "text": "Be unkind.",
+        "target": "fear.unkind",
+        "enqueue": "exit.nofade"
+      }
+    ]
+  }
+]

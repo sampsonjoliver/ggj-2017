@@ -1,0 +1,53 @@
+[
+  {
+    "type": "addText",
+    "top": 0.1,
+    "left": 0.5,
+    "time": 1,
+    "id": "fear.prekill.1",
+    "text": "..."
+  },
+  {
+    "type": "addText",
+    "top": 0.2,
+    "left": 0.5,
+    "time": 1,
+    "id": "fear.prekill.2",
+    "text": "No! I changed my mind!"
+  },
+  {
+    "type": "addText",
+    "top": 0.2,
+    "left": 0.6,
+    "time": 1,
+    "id": "fear.prekill.3",
+    "text": "I misspoke"
+  },
+  {
+    "type": "addText",
+    "top": 0.4,
+    "left": 0.6,
+    "time": 1,
+    "id": "fear.prekill.4",
+    "text": "Save my soul! Take me with you!"
+  },
+  {
+    "type": "addTexts",
+    "top": 0.5,
+    "left": 0.8,
+    "time": 1,
+    "texts": [
+      {
+        "text": "Kill.",
+        "target": "fear.kill",
+        "enqueue": "exit.nofade"
+      },
+      {
+        "text": "Leave to die.",
+        "target": "fear.kill",
+        "id": "fear.leave",
+        "enqueue": "exit.nofade"
+      }
+    ]
+  }
+]

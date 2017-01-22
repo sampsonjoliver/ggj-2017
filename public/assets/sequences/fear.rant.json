@@ -1,0 +1,19 @@
+[
+  {
+    "type": "addText",
+    "top": 0.2,
+    "left": 0.5,
+    "time": 1,
+    "id": "fear.rant.1",
+    "text": "RANT CITY BABY."
+  },
+  {
+    "type": "addText",
+    "top": 0.6,
+    "left": 0.6,
+    "time": 1,
+    "id": "fear.rant.2",
+    "text": "Continue.",
+    "target": "fear.prekill"
+  }
+]

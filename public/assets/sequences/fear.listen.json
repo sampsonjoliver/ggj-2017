@@ -1,0 +1,44 @@
+[
+  {
+    "type": "addText",
+    "top": 0.2,
+    "left": 0.5,
+    "time": 1,
+    "id": "fear.listen.1",
+    "text": "I know you feel that you may know me well by now."
+  },
+  {
+    "type": "addText",
+    "top": 0.3,
+    "left": 0.4,
+    "time": 1,
+    "id": "fear.listen.2",
+    "text": "But you have so much to learn."
+  },
+  {
+    "type": "addText",
+    "top": 0.4,
+    "left": 0.6,
+    "time": 1,
+    "id": "fear.listen.3",
+    "text": "The colours are muted at these depths."
+  },
+  {
+    "type": "addText",
+    "top": 0.5,
+    "left": 0.3,
+    "time": 1,
+    "id": "fear.listen.4",
+    "text": "You are still young. So many shades yet to be seen."
+  },
+  {
+    "type": "addText",
+    "top": 0.6,
+    "left": 0.6,
+    "time": 1,
+    "id": "fear.listen.5",
+    "text": "Continue.",
+    "target": "fear.rant",
+    "enqueue": "exit.nofade"
+  }
+]
