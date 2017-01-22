@@ -2,7 +2,7 @@
   {
     "type": "addText",
     "top": 0.3,
-    "left": 0.6,
+    "left": 0.55,
     "time": 1,
     "text": "You just float there, an inert blob of ill-will!",
     "id": "regret.observe.1"
@@ -10,7 +10,7 @@
   {
     "type": "addText",
     "top": 0.4,
-    "left": 0.6,
+    "left": 0.62,
     "time": 1,
     "text": "Oh, how you revel in my suffering.",
     "id": "regret.observe.2"
@@ -18,7 +18,7 @@
   {
     "type": "addText",
     "top": 0.5,
-    "left": 0.6,
+    "left": 0.58,
     "time": 1,
     "text": "I can see it in you. There's delight behind your eyes.",
     "id": "regret.observe.3"
@@ -26,7 +26,7 @@
   {
     "type": "addText",
     "top": 0.6,
-    "left": 0.6,
+    "left": 0.65,
     "time": 1,
     "text": "Were not our places switched!",
     "id": "regret.observe.4"
@@ -34,7 +34,7 @@
   {
     "type": "addText",
     "top": 0.7,
-    "left": 0.6,
+    "left": 0.55,
     "time": 2,
     "text": "I could draw you from yourself, help you die quickly.",
     "id": "regret.observe.5"
@@ -42,7 +42,7 @@
   {
     "type": "addText",
     "top": 0.8,
-    "left": 0.4,
+    "left": 0.8,
     "time": 2,
     "text": "Continue.",
     "target": "regret.dream",

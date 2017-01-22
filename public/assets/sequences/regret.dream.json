@@ -2,7 +2,7 @@
   {
     "type": "addText",
     "top": 0.2,
-    "left": 0.5,
+    "left": 0.55,
     "time": 1,
     "text": "I have dreamt and dreamt well of a better path. One so ostensibly near, but perpetually drawing away from reach.",
     "id": "regret.dream.1",
@@ -11,7 +11,7 @@
   {
     "type": "addText",
     "top": 0.3,
-    "left": 0.5,
+    "left": 0.60,
     "time": 1,
     "id": "regret.dream.2",
     "text": "Dreams have drifted and tossed as a blurry vessel on the undulating expanse of the sky above.",
@@ -20,7 +20,7 @@
   {
     "type": "addText",
     "top": 0.4,
-    "left": 0.5,
+    "left": 0.52,
     "time": 1,
     "id": "regret.dream.3",
     "text": "Peering from dark corners like neighbours from timelines unknown.",
@@ -37,8 +37,8 @@
   },
   {
     "type": "addText",
-    "top": 0.6,
-    "left": 0.3,
+    "top": 0.65,
+    "left": 0.55,
     "time": 1,
     "id": "regret.dream.observe.1",
     "text": "I have sunk. And now will bleed slowly to death, without a particle of hope to speak of.",
@@ -46,26 +46,17 @@
   },
   {
     "type": "addText",
-    "top": 0.7,
-    "left": 0.3,
-    "time": 1,
-    "id": "regret.dream.observe.2",
-    "text": "...",
-    "requires": "!regret.unkind regret.observe"
-  },
-  {
-    "type": "addText",
-    "top": 0.8,
-    "left": 0.3,
-    "time": 1,
+    "top": 0.75,
+    "left": 0.57,
+    "time": 2,
     "id": "regret.dream.observe.3",
     "text": "Say something!",
     "requires": "!regret.unkind regret.observe"
   },
   {
     "type": "addText",
-    "top": 0.6,
-    "left": 0.6,
+    "top": 0.63,
+    "left": 0.58,
     "time": 1,
     "id": "regret.dream.kind.1",
     "text": "I regret offending you, as I regret my life.",
@@ -82,8 +73,8 @@
   },
   {
     "type": "addText",
-    "top": 0.8,
-    "left": 0.6,
+    "top": 0.77,
+    "left": 0.62,
     "time": 1,
     "id": "regret.dream.kind.3",
     "text": "Make it brief and meaningless.",
@@ -91,8 +82,8 @@
   },
   {
     "type": "addTexts",
-    "top": 0.5,
-    "left": 0.8,
+    "top": 0.80,
+    "left": 0.80,
     "time": 1,
     "texts": [
       {

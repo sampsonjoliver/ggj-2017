@@ -1,0 +1,28 @@
+[
+  {
+    "type": "addText",
+    "top": 0.2,
+    "left": 0.5,
+    "time": 1,
+    "id": "mania.kind.1",
+    "text": "Yes, I am dying... can you keep a secret?"
+  },
+  {
+    "type": "addText",
+    "top": 0.3,
+    "left": 0.4,
+    "time": 1,
+    "id": "mania.kind.2",
+    "text": "I have never been happier."
+  },
+  {
+    "type": "addText",
+    "top": 0.7,
+    "left": 0.5,
+    "time": 1,
+    "id": "mania.kind.3",
+    "text": "Continue.",
+    "target": "mania.prekill",
+    "enqueue": "exit.nofade"
+  }
+]

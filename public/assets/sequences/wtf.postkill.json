@@ -1,0 +1,29 @@
+[
+  {
+    "type": "addText",
+    "top": 0.2,
+    "left": 0.2,
+    "time": 1,
+    "id": "wtf.kpostkillind.1",
+    "text": "... And sink deeper.",
+    "requires": "wtf.kind"
+  },
+  {
+    "type": "addText",
+    "top": 0.2,
+    "left": 0.2,
+    "time": 1,
+    "id": "wtf.kpostkill.1",
+    "text": "You sink deeper.",
+    "requires": "!wtf.kind"
+  },
+  {
+    "type": "addText",
+    "top": 0.3,
+    "left": 0.3,
+    "time": 2,
+    "id": "wtf.kpostkill.2",
+    "text": "Continue",
+    "target": "fear"
+  }
+]

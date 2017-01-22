@@ -1,0 +1,29 @@
+[
+  {
+    "type": "addText",
+    "top": 0.2,
+    "left": 0.5,
+    "time": 1,
+    "id": "mania.postkill.1",
+    "text": "I will be fine.",
+    "requires": "mania.leave"
+  },
+  {
+    "type": "addText",
+    "top": 0.3,
+    "left": 0.4,
+    "time": 1,
+    "id": "mania.postkill.2",
+    "text": "Just fine.",
+    "requires": "mania.leave"
+  },
+  {
+    "type": "addText",
+    "top": 0.4,
+    "left": 0.6,
+    "time": 1,
+    "id": "mania.postkill.3",
+    "text": "Continue.",
+    "target": "todo"
+  }
+]

@@ -1,0 +1,84 @@
+[
+  {
+    "type": "addImage",
+    "image": "regret.bg",
+    "parallax": -30,
+    "time": 0
+  },
+  {
+    "type": "fadeIn",
+    "time": 0
+  },
+  {
+    "type": "addText",
+    "top": 0.2,
+    "left": 0.5,
+    "time": 1,
+    "id": "mania.1",
+    "text": "I see you."
+  },
+  {
+    "type": "addText",
+    "top": 0.3,
+    "left": 0.5,
+    "time": 1,
+    "id": "mania.2",
+    "text": "I have waited for this moment."
+  },
+  {
+    "type": "addText",
+    "top": 0.4,
+    "left": 0.5,
+    "time": 1,
+    "id": "mania.3",
+    "text": "I haven't long."
+  },
+  {
+    "type": "addText",
+    "top": 0.5,
+    "left": 0.5,
+    "time": 1,
+    "id": "mania.4",
+    "text": "I feel like I can trust you."
+  },
+  {
+    "type": "addText",
+    "top": 0.6,
+    "left": 0.5,
+    "time": 3,
+    "id": "mania.5",
+    "text": "You just have one of those faces."
+  },
+  {
+    "type": "addText",
+    "top": 0.7,
+    "left": 0.5,
+    "time": 1,
+    "id": "mania.6",
+    "text": "I wonder, perhaps, could you trust me too?"
+  },
+  {
+    "type": "addTexts",
+    "top": 0.4,
+    "left": 0.7,
+    "time": 1,
+    "texts": [
+      {
+        "text": "Confide in.",
+        "target": "mania.confide",
+        "enqueue": "exit.nofade"
+      },
+      {
+        "text": "Be kind.",
+        "target": "mania.kind",
+        "enqueue": "exit.nofade"
+      },
+      {
+        "text": "Be unkind.",
+        "target": "mania.prekill",
+        "id": "mania.unkind",
+        "enqueue": "exit.nofade"
+      }
+    ]
+  }
+]
