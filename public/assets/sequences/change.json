@@ -1,0 +1,60 @@
+[
+  {
+    "type": "addImage",
+    "image": "change.bg",
+    "parallax": false,
+    "time": 0
+  },
+  {
+    "type": "cameraPan",
+    "time": 1,
+    "x": -60,
+    "y": -30
+  },
+  {
+    "type": "fadeIn",
+    "time": 0
+  },
+  {
+    "type": "addText",
+    "top": 0.12,
+    "left": 0.4,
+    "time": 1,
+    "id": "change.1",
+    "text": "Finally... I am so pleased you're here."
+  },
+  {
+    "type": "addText",
+    "top": 0.18,
+    "left": 0.38,
+    "time": 1,
+    "id": "change.2",
+    "text": "Did you know..."
+  },
+  {
+    "type": "addText",
+    "top": 0.28,
+    "left": 0.42,
+    "time": 1,
+    "id": "change.3",
+    "text": "the subaqueous contraption named Trieste carried the first human souls to the bottom of the Challenger Deep?"
+  },
+  {
+    "type": "addText",
+    "top": 0.75,
+    "left": 0.6,
+    "time": 1,
+    "id": "change.4",
+    "text": "It was, at the time, the deepest known floor of this great ocean - the bottom of the Mariana Trench."
+  },
+  {
+    "type": "addText",
+    "top": 0.85,
+    "left": 0.8,
+    "time": 1,
+    "id": "change.5",
+    "text": "Continue.",
+    "target": "change.2",
+    "enqueue": "exit.nofade"
+  }
+]

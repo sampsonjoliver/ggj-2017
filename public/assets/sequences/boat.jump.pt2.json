@@ -21,7 +21,7 @@
     "left": 0.5,
     "time": 4,
     "id": "boat.jump.8",
-    "text": "You are cast violently into the murky blackness…"
+    "text": "You are cast violently into the murky sea…"
   },
   {
     "type": "addText",

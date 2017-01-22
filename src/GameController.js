@@ -21,6 +21,10 @@ import regretCharPath from '../public/assets/images/regret.character.png';
 import regretCharPostkillPath from '../public/assets/images/regret.character.postkill.png';
 import regretBgPath from '../public/assets/images/regret.bg.1.png';
 import regretBg2Path from '../public/assets/images/regret.bg.2.png';
+import changeBg from '../public/assets/images/scene5.png';
+import finalBg from '../public/assets/images/scene6.png';
+
+import ocean2Path from '../public/img/background2.jpg';
 
 import bottlePath from '../public/assets/images/bottle.png';
 import bottleBgPath from '../public/assets/images/bottle.bg.1.png';
@@ -71,8 +75,9 @@ export default class GameController {
     this.load.image('mania', maniaPath);
     this.load.image('mania.postkill', maniaPostkillPath);
 
-    this.load.image('final', finalPath);
-    this.load.image('final.post', finalPostPath);
+
+    this.load.image('change.bg', changeBg);
+    this.load.image('final.bg', finalBg);
 
     AudioHandler.preload(this);
   }

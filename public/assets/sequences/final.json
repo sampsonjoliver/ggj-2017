@@ -1,0 +1,22 @@
+[
+  {
+    "type": "addImage",
+    "image": "final.bg",
+    "parallax": false,
+    "time": 0
+  },
+  {
+    "type": "cameraPan",
+    "time": 1,
+    "x": -60,
+    "y": -30
+  },
+  {
+    "type": "fadeIn",
+    "time": 0
+  },
+  {
+    "type": "fadeOut",
+    "time": 30
+  }
+]

@@ -18,6 +18,10 @@
     "time": 0
   },
   {
+    "type": "startAudio",
+    "track": "title"
+  },
+  {
     "type": "cameraPan",
     "time": 1,
     "x": -60,

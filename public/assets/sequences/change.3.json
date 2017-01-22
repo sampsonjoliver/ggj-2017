@@ -1,0 +1,59 @@
+[
+  {
+    "type": "addText",
+    "top": 0.12,
+    "left": 0.4,
+    "time": 1,
+    "id": "change.1",
+    "text": "It’s a rotten place, really. Takes and takes and seldom gives back."
+  },
+  {
+    "type": "addText",
+    "top": 0.18,
+    "left": 0.38,
+    "time": 1,
+    "id": "change.2",
+    "text": "But it’s deep at the centre where the truth lies."
+  },
+  {
+    "type": "addText",
+    "top": 0.28,
+    "left": 0.42,
+    "time": 1,
+    "id": "change.3",
+    "text": "Descending, these two men searched for something immaterial."
+  },
+  {
+    "type": "addText",
+    "top": 0.34,
+    "left": 0.45,
+    "time": 1,
+    "id": "change.3",
+    "text": "And as they were drawn to the core of the Earth."
+  },
+  {
+    "type": "addText",
+    "top": 0.75,
+    "left": 0.6,
+    "time": 1,
+    "id": "change.4",
+    "text": "Now that you have traced their journey to me, I wonder…"
+  },
+  {
+    "type": "addText",
+    "top": 0.8,
+    "left": 0.6,
+    "time": 1,
+    "id": "change.5",
+    "text": "Are you ready to follow me?"
+  },
+  {
+    "type": "addText",
+    "top": 0.85,
+    "left": 0.8,
+    "time": 1,
+    "id": "change.6",
+    "text": "Follow.",
+    "target": "final"
+  }
+]

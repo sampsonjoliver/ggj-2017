@@ -1,0 +1,52 @@
+[
+  {
+    "type": "addText",
+    "top": 0.12,
+    "left": 0.4,
+    "time": 1,
+    "id": "change.1",
+    "text": "January, 1960."
+  },
+  {
+    "type": "addText",
+    "top": 0.18,
+    "left": 0.38,
+    "time": 1,
+    "id": "change.2",
+    "text": "Two men from opposite corners of this planet completed their great descent."
+  },
+  {
+    "type": "addText",
+    "top": 0.28,
+    "left": 0.42,
+    "time": 1,
+    "id": "change.3",
+    "text": "It was nearly a decade before Armstrong took his famous step among the stars; yet ours are now forgotten heroes."
+  },
+  {
+    "type": "addText",
+    "top": 0.34,
+    "left": 0.45,
+    "time": 1,
+    "id": "change.3",
+    "text": "Nobody remembers their names. The great hydronauts, dust suspended in time."
+  },
+  {
+    "type": "addText",
+    "top": 0.75,
+    "left": 0.6,
+    "time": 1,
+    "id": "change.4",
+    "text": "They left pieces of themselves down here. Did they know there was no fortune in their journey?"
+  },
+  {
+    "type": "addText",
+    "top": 0.85,
+    "left": 0.8,
+    "time": 1,
+    "id": "change.5",
+    "text": "Continue.",
+    "target": "change.3",
+    "enqueue": "exit.nofade"
+  }
+]
