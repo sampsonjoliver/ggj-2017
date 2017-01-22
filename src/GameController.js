@@ -18,10 +18,11 @@ import regretBg2Path from '../public/assets/images/scene3_pass1_bg2.png';
 
 import changeBg from '../public/assets/images/scene5.png';
 import finalBg from '../public/assets/images/scene6.png';
+import logo from '../public/assets/images/mariana_logo.png';
 
 import ocean2Path from '../public/img/background2.jpg';
 
-const DEBUG_FAST = true;
+const DEBUG_FAST = false;
 
 export default class GameController {
   static self;
@@ -49,6 +50,8 @@ export default class GameController {
 
     this.load.image('change.bg', changeBg);
     this.load.image('final.bg', finalBg);
+
+    this.load.image('logo', logo);
 
     AudioHandler.preload(this);
   }
