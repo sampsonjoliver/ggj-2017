@@ -27,7 +27,9 @@ class App extends Component {
   }
 
   followLink(link) {
-    this.setState({ texts: this.state.texts, links: _.concat(this.state.links, link.target) });
+    console.log(link);
+    this.setState({ texts: this.state.texts, links: _.concat(this.state.links, link.id || link.target) });
+    console.log(this.state.links);
     this.props.game.enqueueSequence(this.props.game.loadSequence(link.target), this.props.game.loadSequence(link.enqueue));
   }
 

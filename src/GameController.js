@@ -18,6 +18,8 @@ import regretBg2Path from '../public/assets/images/scene3_pass1_bg2.png';
 
 import ocean2Path from '../public/img/background2.jpg';
 
+const DEBUG_FAST = true;
+
 export default class GameController {
   static self;
   constructor(divId, width, height) {
@@ -78,7 +80,6 @@ export default class GameController {
   checkRequires(event) {
     var requires = event.requires;
     if(!requires) return true;
-    console.log(this);
     requires = requires.split(' ').map(require => {
       if(require.charAt(0) == '!')
         return !_.includes(this.react.state.links, require.substr(1));
@@ -105,7 +106,7 @@ export default class GameController {
         if(eventHandler) {
           eventHandler(this, _.cloneDeep(event));
         }
-      }, timeout * 1000);
+      }, timeout * (DEBUG_FAST ? 100 : 1000));
     }
   }
 }
