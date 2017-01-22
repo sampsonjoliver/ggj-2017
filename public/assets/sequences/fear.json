@@ -6,6 +6,11 @@
     "time": 0
   },
   {
+    "type": "startAudio",
+    "track": "drone2",
+    "time": 0
+  },
+  {
     "type": "addImage",
     "image": "fear.bg.2",
     "parallax": 20,

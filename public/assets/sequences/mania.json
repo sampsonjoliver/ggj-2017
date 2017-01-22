@@ -6,6 +6,11 @@
     "time": 0
   },
   {
+    "type": "startAudio",
+    "track": "drone4",
+    "time": 0
+  },
+  {
     "type": "addImage",
     "image": "bottle.small",
     "parallax": 20,

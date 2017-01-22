@@ -1,0 +1,77 @@
+[
+  {
+    "type": "addImage",
+    "image": "title.bg",
+    "parallax": false,
+    "time": 0
+  },
+  {
+    "type": "addImage",
+    "image": "logo",
+    "x": 0.5,
+    "y": 0.2,
+    "time": 0
+  },
+  {
+    "type": "stopAudio",
+    "track": "drone1",
+    "time": 0
+  },
+  {
+    "type": "startAudio",
+    "track": "title",
+    "time": 0
+  },
+  {
+    "type": "cameraPan",
+    "time": 1,
+    "x": -60,
+    "y": -30
+  },
+  {
+    "type": "fadeIn",
+    "time": 0
+  },
+  {
+    "type": "addText",
+    "top": 0.35,
+    "left": 0.35,
+    "time": 1,
+    "text": "Rose Morgan - Creative Direction & Art"
+  },
+  {
+    "type": "addText",
+    "top": 0.4,
+    "left": 0.4,
+    "time": 0.25,
+    "text": "Leon Cranswick - Narrative, Writing & Audio"
+  },
+  {
+    "type": "addText",
+    "top": 0.45,
+    "left": 0.33,
+    "time": 0.25,
+    "text": "Tom Wright - Programming & Development"
+  },
+  {
+    "type": "addText",
+    "top": 0.5,
+    "left": 0.42,
+    "time": 0.25,
+    "text": "Sampson Oliver - Programming & Development"
+  },
+  {
+    "type": "addText",
+    "top": 0.55,
+    "left": 0.35,
+    "time": 0.25,
+    "text": "Abbey Roads - Production & Typography"
+  },
+  {
+    "type": "addText",
+    "top": 0.72,
+    "left": 0.4,
+    "time": 1,
+    "text": "Born at the Melbourne Global Game Jam 2017"
+  }
+]

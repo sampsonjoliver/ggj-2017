@@ -24,6 +24,12 @@
     "y": -30
   },
   {
+    "type": "crossfadeAudio",
+    "prevTrack": "title",
+    "nextTrack": "drone1",
+    "time": 0
+  },
+  {
     "type": "fadeIn",
     "time": 1
   },

@@ -26,6 +26,11 @@
     "time": 0
   },
   {
+    "type": "startAudio",
+    "track": "drone3",
+    "time": 0
+  },
+  {
     "type": "cameraPan",
     "time": 1,
     "x": -60,

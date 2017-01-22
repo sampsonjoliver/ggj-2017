@@ -32,6 +32,7 @@ import maniaPostkillPath from '../public/assets/images/mania.postkill.png';
 
 import changeBg from '../public/assets/images/scene5.png';
 import finalBg from '../public/assets/images/scene6.png';
+import logo from '../public/assets/images/mariana_logo.png';
 
 const DEBUG_FAST = true;
 
@@ -75,6 +76,8 @@ export default class GameController {
 
     this.load.image('change.bg', changeBg);
     this.load.image('final.bg', finalBg);
+
+    this.load.image('logo', logo);
 
     AudioHandler.preload(this);
   }

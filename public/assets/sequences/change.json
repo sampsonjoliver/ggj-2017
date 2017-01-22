@@ -6,6 +6,21 @@
     "time": 0
   },
   {
+    "type": "stopAudio",
+    "track": "drone2",
+    "time": 0
+  },
+  {
+    "type": "stopAudio",
+    "track": "drone3",
+    "time": 0
+  },
+  {
+    "type": "stopAudio",
+    "track": "drone4",
+    "time": 0
+  },
+  {
     "type": "cameraPan",
     "time": 1,
     "x": -60,
