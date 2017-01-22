@@ -96,7 +96,7 @@ export default class GameController {
 
     this.camera.bounds = null;
 
-    GameController.self.sequence(GameController.self.loadSequence('mania'));
+    GameController.self.sequence(GameController.self.loadSequence('title'));
   }
 
   update() {
