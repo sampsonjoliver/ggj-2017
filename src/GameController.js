@@ -72,27 +72,27 @@ export default class GameController {
     return name ? require(`../public/assets/sequences/${name}.json`) : null;
   }
 
-  enqueueSequence(sequence, enqueue) {
+  enqueueSequence(sequence, enqueue, links) {
     enqueue = enqueue || this.loadSequence('exit');
-    this.sequence(_.concat(enqueue, sequence));
+    this.sequence(_.concat(enqueue, sequence), links);
   }
 
-  checkRequires(event) {
+  checkRequires(event, links) {
     var requires = event.requires;
     if(!requires) return true;
     requires = requires.split(' ').map(require => {
       if(require.charAt(0) == '!')
-        return !_.includes(this.react.state.links, require.substr(1));
+        return !_.includes(links, require.substr(1));
       else
-        return _.includes(this.react.state.links, require);
+        return _.includes(links, require);
     });
 
     return _.every(requires, require => require);
   }
 
-  sequence(sequence) {
+  sequence(sequence, links) {
     var timeout = 0;
-    sequence = _.filter(sequence, this.checkRequires.bind(this));
+    sequence = _.filter(sequence, item => this.checkRequires(item, links));
 
     for(var i = 0; i < sequence.length; ++i) {
       const event = sequence[i];

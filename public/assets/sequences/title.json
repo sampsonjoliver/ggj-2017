@@ -29,11 +29,11 @@
   },
   {
     "type": "addText",
-    "text": "Here I am",
+    "text": "Here I am.",
     "id": "1",
     "top": 0.5,
-    "left": 0.3,
-    "time": 2,
+    "left": 0.4,
+    "time": 3,
     "target": "boat",
     "enqueue": "exit.nofade"
   }
