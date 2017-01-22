@@ -42,6 +42,6 @@
     "time": 1,
     "id": "mania.postkill.3",
     "text": "Continue.",
-    "target": "final"
+    "target": "change"
   }
 ]

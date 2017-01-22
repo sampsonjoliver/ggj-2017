@@ -21,20 +21,17 @@ import regretCharPath from '../public/assets/images/regret.character.png';
 import regretCharPostkillPath from '../public/assets/images/regret.character.postkill.png';
 import regretBgPath from '../public/assets/images/regret.bg.1.png';
 import regretBg2Path from '../public/assets/images/regret.bg.2.png';
-import changeBg from '../public/assets/images/scene5.png';
-import finalBg from '../public/assets/images/scene6.png';
-
-import ocean2Path from '../public/img/background2.jpg';
 
 import bottlePath from '../public/assets/images/bottle.png';
+import bottleSmallPath from '../public/assets/images/bottle.small.png';
 import bottleBgPath from '../public/assets/images/bottle.bg.1.png';
 import bottleBg2Path from '../public/assets/images/bottle.bg.2.png';
 
 import maniaPath from '../public/assets/images/mania.png';
 import maniaPostkillPath from '../public/assets/images/mania.postkill.png';
 
-import finalPath from '../public/assets/images/final.png';
-import finalPostPath from '../public/assets/images/final.post.png';
+import changeBg from '../public/assets/images/scene5.png';
+import finalBg from '../public/assets/images/scene6.png';
 
 const DEBUG_FAST = true;
 
@@ -69,12 +66,12 @@ export default class GameController {
     this.load.image('regret.bg.2', regretBg2Path);
 
     this.load.image('bottle', bottlePath);
+    this.load.image('bottle.small', bottleSmallPath);
     this.load.image('bottle.bg.1', bottleBgPath);
     this.load.image('bottle.bg.2', bottleBg2Path);
 
     this.load.image('mania', maniaPath);
     this.load.image('mania.postkill', maniaPostkillPath);
-
 
     this.load.image('change.bg', changeBg);
     this.load.image('final.bg', finalBg);

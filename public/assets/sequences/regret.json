@@ -1,15 +1,23 @@
 [
   {
     "type": "addImage",
-    "image": "regret.bg",
+    "image": "regret.bg.1",
     "parallax": -30,
     "time": 0
   },
   {
     "type": "addImage",
-    "image": "regret.bg2",
+    "image": "regret.bg.2",
     "parallax": 10,
     "time": 0
+  },
+  {
+    "type": "addImage",
+    "image": "bottle.small",
+    "parallax": 20,
+    "time": 0,
+    "x": 0.3,
+    "y": 0.88
   },
   {
     "type": "addImage",
@@ -100,9 +108,9 @@
   },
   {
     "type": "addText",
-    "top": 0.8,
-    "left": 0.6,
-    "time": 1,
+    "top": 0.88,
+    "left": 0.1,
+    "time": 2,
     "target": "bottle.2",
     "text": "A bottle twirls slowly in the closing darkness, lost and alone.",
     "requires": "!bottle.2"

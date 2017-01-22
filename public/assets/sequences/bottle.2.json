@@ -18,7 +18,7 @@
   {
     "type": "addText",
     "top": 0.2,
-    "left": 0.2,
+    "left": 0.55,
     "time": 1,
     "id": "bottle.2.1",
     "text": "A Message - January 23rd"
@@ -31,15 +31,15 @@
   {
     "type": "addText",
     "top": 0.3,
-    "left": 0.3,
-    "time": 0,
+    "left": 0.55,
+    "time": 1,
     "id": "bottle.2.2",
     "text": "I cannot say what I expect we’ll see amongst this hazy darkness."
   },
   {
     "type": "addText",
     "top": 0.4,
-    "left": 0.3,
+    "left": 0.55,
     "time": 0,
     "id": "bottle.2.3",
     "text": "In truth, this is a journey for the sake of a journey. All we can learn is how far we can go; and we may take the answer to our graves."
@@ -47,7 +47,7 @@
   {
     "type": "addText",
     "top": 0.5,
-    "left": 0.3,
+    "left": 0.55,
     "time": 0,
     "id": "bottle.2.4",
     "text": "Our descent is ever so gradual. It’s as though we are suspended in a surreal moment. Surreal but beautiful, such an expanse of nothingness is."
@@ -55,15 +55,15 @@
   {
     "type": "addText",
     "top": 0.6,
-    "left": 0.3,
+    "left": 0.55,
     "time": 0,
     "id": "bottle.2.5",
     "text": "I trust my colleague with everything, as I hope he does me. If at any moment the walls around us give in to the pressure, we will vanish in a fraction of a moment. All I can do is hope and pray that some valuable lesson might be salvaged from such carnage."
   },
   {
     "type": "addText",
-    "top": 0.7,
-    "left": 0.3,
+    "top": 0.75,
+    "left": 0.55,
     "time": 0,
     "id": "bottle.2.6",
     "text": "D."
@@ -72,7 +72,7 @@
   {
     "type": "addText",
     "top": 0.8,
-    "left": 0.3,
+    "left": 0.8,
     "time": 0,
     "text": "Continue.",
     "target": "regret"

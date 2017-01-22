@@ -26,7 +26,7 @@
   {
     "type": "addText",
     "top": 0.18,
-    "left": 0.38,
+    "left": 0.45,
     "time": 1,
     "id": "change.2",
     "text": "Did you know..."
@@ -37,7 +37,7 @@
     "left": 0.42,
     "time": 1,
     "id": "change.3",
-    "text": "the subaqueous contraption named Trieste carried the first human souls to the bottom of the Challenger Deep?"
+    "text": "The subaqueous contraption named Trieste carried the first human souls to the bottom of the Challenger Deep?"
   },
   {
     "type": "addText",

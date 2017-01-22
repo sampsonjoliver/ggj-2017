@@ -9,8 +9,8 @@
   },
   {
     "type": "addText",
-    "top": 0.18,
-    "left": 0.38,
+    "top": 0.20,
+    "left": 0.45,
     "time": 1,
     "id": "change.2",
     "text": "But it’s deep at the centre where the truth lies."
@@ -42,7 +42,7 @@
   {
     "type": "addText",
     "top": 0.8,
-    "left": 0.6,
+    "left": 0.63,
     "time": 1,
     "id": "change.5",
     "text": "Are you ready to follow me?"

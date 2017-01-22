@@ -19,6 +19,14 @@
   },
   {
     "type": "addImage",
+    "image": "bottle.small",
+    "parallax": false,
+    "time": 0,
+    "x": 0.85,
+    "y": 0.15
+  },
+  {
+    "type": "addImage",
     "image": "fear.character",
     "parallax": false,
     "time": 0
@@ -98,9 +106,9 @@
   },
   {
     "type": "addText",
-    "top": 0.8,
-    "left": 0.6,
-    "time": 1,
+    "top": 0.17,
+    "left": 0.70,
+    "time": 2,
     "target": "bottle.1",
     "text": "A bottle catches the faint starlight from above.",
     "requires": "!bottle.1"
