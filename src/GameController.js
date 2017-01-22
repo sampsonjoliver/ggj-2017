@@ -16,6 +16,9 @@ import regretCharPath from '../public/assets/images/scene3_pass1_characters.png'
 import regretBgPath from '../public/assets/images/scene3_pass1_bg.png';
 import regretBg2Path from '../public/assets/images/scene3_pass1_bg2.png';
 
+import changeBg from '../public/assets/images/scene5.png';
+import finalBg from '../public/assets/images/scene6.png';
+
 import ocean2Path from '../public/img/background2.jpg';
 
 const DEBUG_FAST = true;
@@ -43,6 +46,9 @@ export default class GameController {
     this.load.image('regret.character', regretCharPath);
     this.load.image('regret.bg', regretBgPath);
     this.load.image('regret.bg2', regretBg2Path);
+
+    this.load.image('change.bg', changeBg);
+    this.load.image('final.bg', finalBg);
 
     AudioHandler.preload(this);
   }
