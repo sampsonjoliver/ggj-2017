@@ -13,6 +13,11 @@
     "time": 0
   },
   {
+    "type": "stopAudio",
+    "track": "drone1",
+    "time": 0
+  },
+  {
     "type": "startAudio",
     "track": "title",
     "time": 0
