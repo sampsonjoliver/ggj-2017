@@ -1,0 +1,52 @@
+[
+  {
+    "type": "addText",
+    "top": 0.2,
+    "left": 0.5,
+    "time": 1,
+    "id": "mania.confide.1",
+    "text": "You've done some truly atrocious things."
+  },
+  {
+    "type": "addText",
+    "top": 0.3,
+    "left": 0.4,
+    "time": 1,
+    "id": "mania.confide.2",
+    "text": "But haven't we all?"
+  },
+  {
+    "type": "addText",
+    "top": 0.4,
+    "left": 0.6,
+    "time": 1,
+    "id": "mania.confide.3",
+    "text": "Think about all the good you have done."
+  },
+  {
+    "type": "addText",
+    "top": 0.5,
+    "left": 0.3,
+    "time": 1,
+    "id": "mania.confide.4",
+    "text": "You could die with me in the darkness here and now."
+  },
+  {
+    "type": "addText",
+    "top": 0.6,
+    "left": 0.6,
+    "time": 3,
+    "id": "mania.confide.5",
+    "text": "Leave your light behind for the next."
+  },
+  {
+    "type": "addText",
+    "top": 0.7,
+    "left": 0.5,
+    "time": 1,
+    "id": "mania.confide.6",
+    "text": "Continue.",
+    "target": "mania.prekill",
+    "enqueue": "exit.nofade"
+  }
+]

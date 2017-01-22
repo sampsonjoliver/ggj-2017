@@ -6,7 +6,7 @@
     "time": 1,
     "id": "fear.kill.1",
     "text": "Don't leave me.",
-    "require": "fear.leave"
+    "requires": "fear.leave"
   },
   {
     "type": "addText",
