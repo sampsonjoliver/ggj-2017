@@ -18,5 +18,13 @@
   {
     "type": "fadeOut",
     "time": 30
+  },
+  {
+    "type": "addText",
+    "top": 0.5,
+    "left": 0.5,
+    "time": 0,
+    "text": "Fin.",
+    "target": "credits"
   }
 ]
