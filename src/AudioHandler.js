@@ -1,11 +1,22 @@
 import Sound from 'phaser';
 
-const currentTracks = {};
+import titleTheme from '../public/assets/audio/mariana_theme.mp3';
+import drone1 from '../public/assets/audio/mariana_1_1.mp3';
+import drone2 from '../public/assets/audio/mariana_2_1.mp3';
+import drone3 from '../public/assets/audio/mariana_3_1.mp3';
+import drone4 from '../public/assets/audio/mariana_4_1.mp3';
+
+const currentTracks = {
+
+};
 
 export default class AudioHandler {
   static Tracks = {
-    'background1': background1,
-    'background2': background2
+    "title": titleTheme,
+    "drone1": drone1,
+    "drone2": drone2,
+    "drone3": drone3,
+    "drone4": drone4,
   }
 
   static getCurrentTracks() {
