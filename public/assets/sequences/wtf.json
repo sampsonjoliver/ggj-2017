@@ -1,26 +1,20 @@
 [
   {
     "type": "addImage",
-    "image": "wtf.bg",
+    "image": "wtf.bg.1",
     "parallax": -30,
     "time": 0
   },
   {
     "type": "addImage",
-    "image": "wtf.bg2",
-    "parallax": 20,
+    "image": "wtf.bg.2",
+    "parallax": 15,
     "time": 0
   },
   {
     "type": "addImage",
-    "image": "wtf.debris",
+    "image": "wtf.fish",
     "parallax": 30,
-    "time": 0
-  },
-  {
-    "type": "addImage",
-    "image": "wtf.character",
-    "parallax": false,
     "time": 0
   },
   {

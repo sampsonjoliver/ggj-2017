@@ -1,12 +1,48 @@
 [
   {
+    "type": "addImage",
+    "image": "fear.bg.1",
+    "parallax": -30,
+    "time": 0
+  },
+  {
+    "type": "addImage",
+    "image": "fear.bg.2",
+    "parallax": 20,
+    "time": 0
+  },
+  {
+    "type": "addImage",
+    "image": "fear.debris",
+    "parallax": 30,
+    "time": 0
+  },
+  {
+    "type": "addImage",
+    "image": "fear.character",
+    "parallax": false,
+    "time": 0,
+    "requires": "fear.leave"
+  },
+  {
+    "type": "addImage",
+    "image": "fear.character.postkill",
+    "parallax": false,
+    "time": 0,
+    "requires": "!fear.leave"
+  },
+  {
+    "type": "fadeIn",
+    "time": 0
+  },
+  {
     "type": "addText",
     "top": 0.2,
     "left": 0.5,
     "time": 1,
     "id": "fear.kill.1",
     "text": "Don't leave me.",
-    "require": "fear.leave"
+    "requires": "fear.leave"
   },
   {
     "type": "addText",
@@ -15,6 +51,6 @@
     "time": 2,
     "id": "fear.kill.2",
     "text": "Leave.",
-    "target": "scene5"
+    "target": "regret"
   }
 ]

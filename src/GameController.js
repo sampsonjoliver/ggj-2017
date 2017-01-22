@@ -3,20 +3,32 @@ import * as Events from './Events.js';
 import * as _ from 'lodash';
 import AudioHandler from './AudioHandler';
 
-import titleBgPath from '../public/assets/images/scene1_pass1_bg.png';
-import titleCharPath from '../public/assets/images/scene1_pass1_character.png';
-import titleWavesPath from '../public/assets/images/scene1_pass1_waves.png';
+import titleBgPath from '../public/assets/images/title.bg.png';
+import titleCharPath from '../public/assets/images/title.character.png';
+import titleWavesPath from '../public/assets/images/title.waves.png';
 
-import wtfBgPath from '../public/assets/images/scene2_pass1_bg.png';
-import wtfBg2Path from '../public/assets/images/scene2_pass1_bg2.png';
-import wtfCharPath from '../public/assets/images/scene2_pass1_characters.png';
-import wtfDebrisPath from '../public/assets/images/scene2_pass1_debris.png';
+import wtfBgPath from '../public/assets/images/wtf.bg.1.png';
+import wtfBg2Path from '../public/assets/images/wtf.bg.2.png';
+import wtfFishPath from '../public/assets/images/wtf.fish.png';
 
-import regretCharPath from '../public/assets/images/scene3_pass1_characters.png';
-import regretBgPath from '../public/assets/images/scene3_pass1_bg.png';
-import regretBg2Path from '../public/assets/images/scene3_pass1_bg2.png';
+import fearBgPath from '../public/assets/images/fear.bg.1.png';
+import fearBg2Path from '../public/assets/images/fear.bg.2.png';
+import fearCharPath from '../public/assets/images/fear.character.png';
+import fearCharPostkillPath from '../public/assets/images/fear.character.postkill.png';
+import fearDebrisPath from '../public/assets/images/fear.debris.png';
 
-import ocean2Path from '../public/img/background2.jpg';
+import regretCharPath from '../public/assets/images/regret.character.png';
+import regretCharPostkillPath from '../public/assets/images/regret.character.postkill.png';
+import regretBgPath from '../public/assets/images/regret.bg.1.png';
+import regretBg2Path from '../public/assets/images/regret.bg.2.png';
+
+import bottlePath from '../public/assets/images/bottle.png';
+import bottleBgPath from '../public/assets/images/bottle.bg.1.png';
+import bottleBg2Path from '../public/assets/images/bottle.bg.2.png';
+
+import maniaPath from '../public/assets/images/mania.png';
+
+import finalPath from '../public/assets/images/final.png';
 
 const DEBUG_FAST = true;
 
@@ -35,14 +47,27 @@ export default class GameController {
     this.load.image('title.character', titleCharPath);
     this.load.image('title.waves', titleWavesPath);
 
-    this.load.image('wtf.character', wtfCharPath);
-    this.load.image('wtf.bg', wtfBgPath);
-    this.load.image('wtf.bg2', wtfBg2Path);
-    this.load.image('wtf.debris', wtfDebrisPath);
+    this.load.image('wtf.fish', wtfFishPath);
+    this.load.image('wtf.bg.1', wtfBgPath);
+    this.load.image('wtf.bg.2', wtfBg2Path);
+
+    this.load.image('fear.character', fearCharPath);
+    this.load.image('fear.character.postkill', fearCharPostkillPath);
+    this.load.image('fear.bg.1', fearBgPath);
+    this.load.image('fear.bg.2', fearBg2Path);
+    this.load.image('fear.debris', fearDebrisPath);
 
     this.load.image('regret.character', regretCharPath);
-    this.load.image('regret.bg', regretBgPath);
-    this.load.image('regret.bg2', regretBg2Path);
+    this.load.image('regret.character.postkill', regretCharPostkillPath);
+    this.load.image('regret.bg.1', regretBgPath);
+    this.load.image('regret.bg.2', regretBg2Path);
+
+    this.load.image('bottle', bottlePath);
+    this.load.image('bottle.bg.1', bottleBgPath);
+    this.load.image('bottle.bg.2', bottleBg2Path);
+
+    this.load.image('mania', maniaPath);
+    this.load.image('final', finalPath);
 
     AudioHandler.preload(this);
   }
@@ -61,7 +86,7 @@ export default class GameController {
 
     this.camera.bounds = null;
 
-    GameController.self.sequence(GameController.self.loadSequence('regret'));
+    GameController.self.sequence(GameController.self.loadSequence('title'));
   }
 
   update() {

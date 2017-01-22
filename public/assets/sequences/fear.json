@@ -1,9 +1,33 @@
 [
   {
     "type": "addImage",
-    "image": "todo",
+    "image": "fear.bg.1",
     "parallax": -30,
     "time": 0
+  },
+  {
+    "type": "addImage",
+    "image": "fear.bg.2",
+    "parallax": 20,
+    "time": 0
+  },
+  {
+    "type": "addImage",
+    "image": "fear.debris",
+    "parallax": 30,
+    "time": 0
+  },
+  {
+    "type": "addImage",
+    "image": "fear.character",
+    "parallax": false,
+    "time": 0
+  },
+  {
+    "type": "cameraPan",
+    "time": 1,
+    "x": 60,
+    "y": -30
   },
   {
     "type": "fadeIn",
@@ -71,5 +95,14 @@
         "enqueue": "exit.nofade"
       }
     ]
+  },
+  {
+    "type": "addText",
+    "top": 0.8,
+    "left": 0.6,
+    "time": 1,
+    "target": "bottle.1",
+    "text": "A bottle catches the faint starlight from above.",
+    "requires": "!bottle.1"
   }
 ]

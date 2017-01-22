@@ -1,7 +1,13 @@
 [
   {
     "type": "addImage",
-    "image": "bottle.1.bg",
+    "image": "bottle.bg.1",
+    "parallax": 30,
+    "time": 0
+  },
+  {
+    "type": "addImage",
+    "image": "bottle",
     "parallax": false,
     "time": 0
   },
@@ -76,6 +82,6 @@
     "left": 0.3,
     "time": 0,
     "text": "Continue.",
-    "target": "TODO"
+    "target": "fear"
   }
 ]

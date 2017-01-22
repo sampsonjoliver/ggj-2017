@@ -97,5 +97,14 @@
         "enqueue": "exit.nofade"
       }
     ]
+  },
+  {
+    "type": "addText",
+    "top": 0.8,
+    "left": 0.6,
+    "time": 1,
+    "target": "bottle.2",
+    "text": "A bottle twirls slowly in the closing darkness, lost and alone.",
+    "requires": "!bottle.2"
   }
 ]

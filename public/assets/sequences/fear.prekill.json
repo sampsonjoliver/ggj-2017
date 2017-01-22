@@ -21,7 +21,7 @@
     "left": 0.6,
     "time": 1,
     "id": "fear.prekill.3",
-    "text": "I misspoke"
+    "text": "I misspoke."
   },
   {
     "type": "addText",
@@ -39,14 +39,12 @@
     "texts": [
       {
         "text": "Kill.",
-        "target": "fear.kill",
-        "enqueue": "exit.nofade"
+        "target": "fear.kill"
       },
       {
         "text": "Leave to die.",
         "target": "fear.kill",
-        "id": "fear.leave",
-        "enqueue": "exit.nofade"
+        "id": "fear.leave"
       }
     ]
   }

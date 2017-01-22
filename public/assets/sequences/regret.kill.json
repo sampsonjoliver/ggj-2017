@@ -1,5 +1,35 @@
 [
   {
+    "type": "addImage",
+    "image": "regret.bg",
+    "parallax": -30,
+    "time": 0
+  },
+  {
+    "type": "addImage",
+    "image": "regret.bg2",
+    "parallax": 10,
+    "time": 0
+  },
+  {
+    "type": "addImage",
+    "image": "regret.character",
+    "parallax": false,
+    "time": 0,
+    "requires": "regret.leave"
+  },
+  {
+    "type": "addImage",
+    "image": "regret.character.postkill",
+    "parallax": false,
+    "time": 0,
+    "requires": "!regret.leave"
+  },
+  {
+    "type": "fadeIn",
+    "time": 0
+  },
+  {
     "type": "addText",
     "top": 0.2,
     "left": 0.5,
@@ -15,6 +45,6 @@
     "time": 1,
     "id": "regret.kill.2",
     "text": "Leave.",
-    "target": "scene5"
+    "target": "mania"
   }
 ]

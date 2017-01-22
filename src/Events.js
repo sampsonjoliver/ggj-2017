@@ -40,7 +40,6 @@ export function addImage(game, event) {
   var y = typeof event.y === 'number' ? event.y * game.height : game.height/2;
   var image = game.phaser.add.image(x, y, event.image);
   image.anchor.set(0.5, 0.5);
-  image.scale.set(0.9, 0.9);
   if(event.parallax) {
     game.phaser.add.tween(image).to({ x: x + event.parallax }, 5000, Phaser.Easing.Quadratic.InOut).to({ x: x }, 5000, Phaser.Easing.Quadratic.InOut).loop(true).start();
   }

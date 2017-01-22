@@ -1,0 +1,72 @@
+[
+  {
+    "type": "addImage",
+    "image": "bottle.bg.2",
+    "parallax": 30,
+    "time": 0
+  },
+  {
+    "type": "addImage",
+    "image": "bottle",
+    "parallax": false,
+    "time": 0
+  },
+  {
+    "type": "fadeIn",
+    "time": 1
+  },
+  {
+    "type": "addText",
+    "top": 0.2,
+    "left": 0.2,
+    "time": 1,
+    "id": "bottle.3.1",
+    "text": "A Message - January 26th"
+  },
+  {
+    "type": "removeText",
+    "time": 3,
+    "id": "bottle.3.1"
+  },
+  {
+    "type": "addText",
+    "top": 0.3,
+    "left": 0.3,
+    "time": 0,
+    "id": "bottle.3.2",
+    "text": "A crack in the thick outer glass had our hearts skip a beat. In that split second, both our minds went blank. I feel like this is the moment when one’s life is supposed to flash before the eyes."
+  },
+  {
+    "type": "addText",
+    "top": 0.4,
+    "left": 0.3,
+    "time": 0,
+    "id": "bottle.3.3",
+    "text": "The heart-stopping crack, a flash of deep nothing, then a minute of calm. Followed by another, and another. I pulled the plug on the operation immediately and began our gradual ascent. We had reached the bottom of the trench, we had done what we came here to do."
+  },
+  {
+    "type": "addText",
+    "top": 0.5,
+    "left": 0.3,
+    "time": 0,
+    "id": "bottle.3.4",
+    "text": "Our feet are now firmly on the deck of the Santa Maria. What we witnessed with our eyes down there was unique, without a doubt. Odd fish at staggering depths, great storms of algae. We return with no readings, photographs or proof of any these peculiarities -- but what we saw inside ourselves in that chilling moment was deeply profound beyond anything I had hoped to find."
+  },
+  {
+    "type": "addText",
+    "top": 0.6,
+    "left": 0.3,
+    "time": 0,
+    "id": "bottle.3.5",
+    "text": "D."
+  }
+  ,
+  {
+    "type": "addText",
+    "top": 0.8,
+    "left": 0.3,
+    "time": 0,
+    "text": "Continue.",
+    "target": "mania"
+  }
+]
