@@ -5,6 +5,7 @@ const StyledText = styled.p`
   color: white;
   font-size: 1.2em;
   display: inline-block;
+  width: 550px;
   text-align: left;
   position: absolute;
   top: ${props => props.top}px;

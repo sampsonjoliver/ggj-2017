@@ -3,31 +3,31 @@
     "type": "addText",
     "top": 0.2,
     "left": 0.2,
-    "time": 1,
+    "time": 2,
     "id": "boat.stare.1",
     "text": "The sky and the sea are two sides of a coin."
   },
   {
     "type": "addText",
-    "top": 0.3,
-    "left": 0.2,
-    "time": 1,
+    "top": 0.27,
+    "left": 0.27,
+    "time": 2.5,
     "id": "boat.stare.2",
     "text": "I float in the sea as the Earth floats in space."
   },
   {
     "type": "addText",
-    "top": 0.4,
-    "left": 0.2,
-    "time": 1,
+    "top": 0.35,
+    "left": 0.3,
+    "time": 2,
     "id": "boat.stare.3",
     "text": "We are all caught in orbit."
   },
   {
     "type": "addText",
-    "top": 0.6,
-    "left": 0.2,
-    "time": 1,
+    "top": 0.7,
+    "left": 0.35,
+    "time": 3,
     "text": "Continue.",
     "target": "boat",
     "enqueue": "exit.nofade"

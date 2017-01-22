@@ -42,7 +42,7 @@ export function addImage(game, event) {
   image.anchor.set(0.5, 0.5);
   image.scale.set(0.9, 0.9);
   if(event.parallax) {
-    game.phaser.add.tween(image).to({ x: x + event.parallax }, 5000).to({ x: x }, 5000).loop(true).start();
+    game.phaser.add.tween(image).to({ x: x + event.parallax }, 5000, Phaser.Easing.Quadratic.InOut).to({ x: x }, 5000, Phaser.Easing.Quadratic.InOut).loop(true).start();
   }
   game.images[event.image] = image;
   game.overlay.bringToTop();
@@ -57,7 +57,7 @@ export function cameraPan(game, event) {
   game.phaser.camera.x = event.x;
   game.phaser.camera.y = event.y;
 
-  game.phaser.add.tween(game.phaser.camera).to({ x: 0, y: 0}, 2500, Phaser.Easing.Circle).start();
+  game.phaser.add.tween(game.phaser.camera).to({ x: 0, y: 0}, 2500, Phaser.Easing.Quadratic.InOut).start();
 }
 
 export function removeImage(game, event) {
