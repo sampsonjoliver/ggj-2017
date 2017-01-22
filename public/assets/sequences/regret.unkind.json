@@ -2,7 +2,7 @@
   {
     "type": "addText",
     "top": 0.4,
-    "left": 0.4,
+    "left": 0.55,
     "time": 2,
     "text": "You truly are the loathsome dweller of a deep sadness...",
     "id": "regret.observe.1"
@@ -10,7 +10,7 @@
   {
     "type": "addText",
     "top": 0.5,
-    "left": 0.5,
+    "left": 0.60,
     "time": 2,
     "text": "Deeper than I have ever known.",
     "id": "regret.observe.2"
@@ -18,15 +18,15 @@
   {
     "type": "addText",
     "top": 0.6,
-    "left": 0.4,
+    "left": 0.65,
     "time": 2,
     "text": "End my suffering.",
     "id": "regret.observe.3"
   },
   {
     "type": "addText",
-    "top": 0.8,
-    "left": 0.5,
+    "top": 0.85,
+    "left": 0.85,
     "time": 2,
     "text": "Continue.",
     "target": "regret.dream",
