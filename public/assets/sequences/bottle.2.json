@@ -2,7 +2,7 @@
   {
     "type": "addImage",
     "image": "bottle.bg.1",
-    "parallax": false,
+    "parallax": 30,
     "time": 0
   },
   {

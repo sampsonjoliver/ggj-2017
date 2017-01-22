@@ -2,7 +2,7 @@
   {
     "type": "addText",
     "top": 0.2,
-    "left": 0.5,
+    "left": 0.25,
     "time": 1,
     "id": "mania.unkind.1",
     "text": "I know you don't mean that.",
@@ -11,7 +11,7 @@
   {
     "type": "addText",
     "top": 0.3,
-    "left": 0.4,
+    "left": 0.75,
     "time": 1,
     "id": "mania.unkind.2",
     "text": "Your colours will run some day soon.",
@@ -29,8 +29,8 @@
 
   {
     "type": "addText",
-    "top": 0.2,
-    "left": 0.5,
+    "top": 0.15,
+    "left": 0.17,
     "time": 1,
     "id": "mania.prekill.1",
     "text": "You can see my teeth. My muscles contort against the agonising pulse into a grimaced smile.",
@@ -38,8 +38,8 @@
   },
   {
     "type": "addText",
-    "top": 0.3,
-    "left": 0.4,
+    "top": 0.45,
+    "left": 0.65,
     "time": 1,
     "id": "mania.prekill.2",
     "text": "Will you share this happiness with me before you descend to your fate?",
@@ -47,20 +47,18 @@
   },
   {
     "type": "addTexts",
-    "top": 0.5,
+    "top": 0.8,
     "left": 0.8,
     "time": 1,
     "texts": [
       {
         "text": "Kill.",
-        "target": "mania.postkill",
-        "enqueue": "exit.nofade"
+        "target": "mania.postkill"
       },
       {
         "text": "Leave to die.",
         "target": "mania.postkill",
-        "id": "mania.leave",
-        "enqueue": "exit.nofade"
+        "id": "mania.leave"
       }
     ]
   }

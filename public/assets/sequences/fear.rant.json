@@ -10,7 +10,7 @@
   {
     "type": "addText",
     "top": 0.3,
-    "left": 0.5,
+    "left": 0.44,
     "time": 1,
     "id": "fear.rant.2",
     "text": "Fleeting waves of light pierce the water and resonate through your mind."
@@ -18,7 +18,7 @@
   {
     "type": "addText",
     "top": 0.4,
-    "left": 0.5,
+    "left": 0.6,
     "time": 1,
     "id": "fear.rant.3",
     "text": "But what you see and what you feel are often dissonant."
@@ -26,7 +26,7 @@
   {
     "type": "addText",
     "top": 0.5,
-    "left": 0.5,
+    "left": 0.65,
     "time": 1,
     "id": "fear.rant.4",
     "text": "I can no longer live with this sick oscillation."
@@ -34,7 +34,7 @@
   {
     "type": "addText",
     "top": 0.6,
-    "left": 0.5,
+    "left": 0.68,
     "time": 1,
     "id": "fear.rant.5",
     "text": "I am scared."
@@ -42,15 +42,15 @@
   {
     "type": "addText",
     "top": 0.7,
-    "left": 0.5,
+    "left": 0.67,
     "time": 1,
     "id": "fear.rant.6",
     "text": "Make it go away."
   },
   {
     "type": "addText",
-    "top": 0.6,
-    "left": 0.6,
+    "top": 0.8,
+    "left": 0.8,
     "time": 1,
     "text": "Continue.",
     "target": "fear.prekill",

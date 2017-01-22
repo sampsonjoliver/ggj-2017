@@ -60,7 +60,7 @@
   {
     "type": "addText",
     "top": 0.5,
-    "left": 0.3,
+    "left": 0.55,
     "time": 1,
     "id": "fear.4",
     "text": "Our lives have drawn their distant paths across time and coalesced at this point, where we might spill through each other."
@@ -76,7 +76,7 @@
   {
     "type": "addTexts",
     "top": 0.7,
-    "left": 0.6,
+    "left": 0.8,
     "time": 1,
     "texts": [
       {

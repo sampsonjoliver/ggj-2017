@@ -18,7 +18,7 @@
   {
     "type": "addText",
     "top": 0.4,
-    "left": 0.6,
+    "left": 0.55,
     "time": 1,
     "id": "fear.kind.3",
     "text": "We can rust away together."
@@ -26,15 +26,15 @@
   {
     "type": "addText",
     "top": 0.5,
-    "left": 0.3,
+    "left": 0.6,
     "time": 1,
     "id": "fear.kind.4",
     "text": "Show me the love that has been stripped from terrors of the deep."
   },
   {
     "type": "addText",
-    "top": 0.6,
-    "left": 0.6,
+    "top": 0.8,
+    "left": 0.8,
     "time": 1,
     "id": "fear.kind.5",
     "text": "Continue.",

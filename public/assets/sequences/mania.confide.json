@@ -1,16 +1,16 @@
 [
   {
     "type": "addText",
-    "top": 0.2,
-    "left": 0.5,
+    "top": 0.17,
+    "left": 0.2,
     "time": 1,
     "id": "mania.confide.1",
     "text": "You've done some truly atrocious things."
   },
   {
     "type": "addText",
-    "top": 0.3,
-    "left": 0.4,
+    "top": 0.24,
+    "left": 0.25,
     "time": 1,
     "id": "mania.confide.2",
     "text": "But haven't we all?"
@@ -26,7 +26,7 @@
   {
     "type": "addText",
     "top": 0.5,
-    "left": 0.3,
+    "left": 0.71,
     "time": 1,
     "id": "mania.confide.4",
     "text": "You could die with me in the darkness here and now."
@@ -34,15 +34,15 @@
   {
     "type": "addText",
     "top": 0.6,
-    "left": 0.6,
+    "left": 0.65,
     "time": 3,
     "id": "mania.confide.5",
     "text": "Leave your light behind for the next."
   },
   {
     "type": "addText",
-    "top": 0.7,
-    "left": 0.5,
+    "top": 0.8,
+    "left": 0.8,
     "time": 1,
     "id": "mania.confide.6",
     "text": "Continue.",

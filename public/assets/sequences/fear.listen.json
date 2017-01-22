@@ -10,7 +10,7 @@
   {
     "type": "addText",
     "top": 0.3,
-    "left": 0.4,
+    "left": 0.45,
     "time": 1,
     "id": "fear.listen.2",
     "text": "But you have so much to learn."
@@ -26,15 +26,15 @@
   {
     "type": "addText",
     "top": 0.5,
-    "left": 0.3,
+    "left": 0.55,
     "time": 1,
     "id": "fear.listen.4",
     "text": "You are still young. So many shades yet to be seen."
   },
   {
     "type": "addText",
-    "top": 0.6,
-    "left": 0.6,
+    "top": 0.8,
+    "left": 0.8,
     "time": 1,
     "id": "fear.listen.5",
     "text": "Continue.",

@@ -27,8 +27,10 @@ import bottleBgPath from '../public/assets/images/bottle.bg.1.png';
 import bottleBg2Path from '../public/assets/images/bottle.bg.2.png';
 
 import maniaPath from '../public/assets/images/mania.png';
+import maniaPostkillPath from '../public/assets/images/mania.postkill.png';
 
 import finalPath from '../public/assets/images/final.png';
+import finalPostPath from '../public/assets/images/final.post.png';
 
 const DEBUG_FAST = true;
 
@@ -67,7 +69,10 @@ export default class GameController {
     this.load.image('bottle.bg.2', bottleBg2Path);
 
     this.load.image('mania', maniaPath);
+    this.load.image('mania.postkill', maniaPostkillPath);
+
     this.load.image('final', finalPath);
+    this.load.image('final.post', finalPostPath);
 
     AudioHandler.preload(this);
   }
@@ -86,7 +91,7 @@ export default class GameController {
 
     this.camera.bounds = null;
 
-    GameController.self.sequence(GameController.self.loadSequence('title'));
+    GameController.self.sequence(GameController.self.loadSequence('mania'));
   }
 
   update() {

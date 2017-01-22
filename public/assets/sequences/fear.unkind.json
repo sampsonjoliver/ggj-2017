@@ -10,7 +10,7 @@
   {
     "type": "addText",
     "top": 0.3,
-    "left": 0.4,
+    "left": 0.45,
     "time": 1,
     "id": "fear.unkind.2",
     "text": "You must slay me."
@@ -26,15 +26,15 @@
   {
     "type": "addText",
     "top": 0.5,
-    "left": 0.3,
+    "left": 0.5,
     "time": 1,
     "id": "fear.unkind.4",
     "text": "Bleed me into darkness, cast my scarlet hue across the broken moonlight."
   },
   {
     "type": "addText",
-    "top": 0.6,
-    "left": 0.6,
+    "top": 0.7,
+    "left": 0.7,
     "time": 1,
     "id": "fear.unkind.5",
     "text": "Continue.",

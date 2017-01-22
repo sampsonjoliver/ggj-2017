@@ -4,8 +4,6 @@ const currentTracks = {};
 
 export default class AudioHandler {
   static Tracks = {
-    'background1': background1,
-    'background2': background2
   }
 
   static getCurrentTracks() {

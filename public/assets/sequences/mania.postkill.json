@@ -1,8 +1,26 @@
 [
   {
+    "type": "addImage",
+    "image": "mania.postkill",
+    "parallax": 15,
+    "time": 0,
+    "requires": "!mania.leave"
+  },
+  {
+    "type": "addImage",
+    "image": "mania",
+    "parallax": 15,
+    "time": 0,
+    "requires": "mania.leave"
+  },
+  {
+    "type": "fadeIn",
+    "time": 0
+  },
+  {
     "type": "addText",
-    "top": 0.2,
-    "left": 0.5,
+    "top": 0.17,
+    "left": 0.22,
     "time": 1,
     "id": "mania.postkill.1",
     "text": "I will be fine.",
@@ -10,8 +28,8 @@
   },
   {
     "type": "addText",
-    "top": 0.3,
-    "left": 0.4,
+    "top": 0.22,
+    "left": 0.26,
     "time": 1,
     "id": "mania.postkill.2",
     "text": "Just fine.",
@@ -19,11 +37,11 @@
   },
   {
     "type": "addText",
-    "top": 0.4,
-    "left": 0.6,
+    "top": 0.75,
+    "left": 0.7,
     "time": 1,
     "id": "mania.postkill.3",
     "text": "Continue.",
-    "target": "todo"
+    "target": "final"
   }
 ]

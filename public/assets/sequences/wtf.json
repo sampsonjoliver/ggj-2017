@@ -30,28 +30,28 @@
   {
     "type": "addText",
     "top": 0.2,
-    "left": 0.2,
+    "left": 0.6,
     "time": 1,
     "id": "wtf.1",
     "text": "Sinking..."
   },
   {
     "type": "removeText",
-    "time": 2,
+    "time": 4,
     "id": "wtf.1"
   },
   {
     "type": "addText",
     "top": 0.3,
-    "left": 0.3,
+    "left": 0.65,
     "time": 0,
     "id": "wtf.2",
     "text": "A foreign swarm drifts from the blur..."
   },
   {
     "type": "addTexts",
-    "top": 0.5,
-    "left": 0.4,
+    "top": 0.75,
+    "left": 0.7,
     "time": 1,
     "texts": [
       {
